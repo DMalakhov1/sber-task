@@ -38,7 +38,7 @@ python -m task2_bot.bot.main
 
 ## Дополнительный провайдер
 
-Для личного запуска BardBorn можно явно задать `OPENAI_BASE_URL=https://bardborn.lol/v1` и `OPENAI_MODEL=gpt-6-sol`, затем ввести соответствующий ключ в Telegram. Этот режим отличается от требования DeepSeek. Настройки модели инструмента Codex от этих параметров независимы.
+Для запуска используется официальный DeepSeek API: `OPENAI_BASE_URL=https://api.deepseek.com` и `OPENAI_MODEL=deepseek-flash`. API-ключ DeepSeek вводится пользователем в личном чате Telegram и хранится только в памяти сессии.
 
 ## Поиск и проверка ответа
 
