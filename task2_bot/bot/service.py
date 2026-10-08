@@ -28,6 +28,69 @@ SYSTEM = """Ты отраслевой эксперт по электроэнер
 HISTORY_CONTEXT_TURNS = 3
 
 
+def neutralize_change_premise(text):
+    """Make causal change questions retrieval-neutral so evidence can confirm or correct direction."""
+    raw = str(text or '').strip()
+    if not re.match(r'^почему\b', raw, re.I):
+        return raw
+    neutral = re.sub(r'^почему\s+', '', raw, flags=re.I)
+    neutral = re.sub(
+        r'\b(снизил(?:ся|ась|ось|ись)|снижал(?:ся|ась|ось|ись)?|снижение|'
+        r'упал(?:а|о|и)?|падение|уменьшил(?:ся|ась|ось|ись)|уменьшение|'
+        r'вырос(?:ла|ло|ли)?|рост|увеличил(?:ся|ась|ось|ись)|увеличение)\b',
+        'изменение', neutral, flags=re.I)
+    neutral = re.sub(r'\s{2,}', ' ', neutral).strip(' ?')
+    return neutral or raw
+
+
+def local_en_rescue_query(text):
+    """Deterministic bilingual retrieval hint used only when provider-side query prep fails."""
+    raw = str(text or '')
+    folded = raw.casefold()
+    terms = []
+
+    def add(value):
+        if value and value not in terms:
+            terms.append(value)
+
+    if 'миров' in folded or 'глобал' in folded:
+        add('global')
+    if 'электроэнерг' in folded or 'электричеств' in folded:
+        add('electricity')
+    if 'спрос' in folded or 'потреблен' in folded:
+        add('demand')
+    if any(x in folded for x in ('рост', 'вырос', 'увелич', 'сниз', 'сократ', 'паден', 'измен')):
+        add('change')
+    if 'причин' in folded or 'фактор' in folded:
+        add('drivers')
+    if 'прогноз' in folded or 'ожида' in folded:
+        add('forecast')
+    if 'генерац' in folded or 'выработ' in folded:
+        add('generation')
+    if 'возобнов' in folded:
+        add('renewables')
+    if 'китай' in folded:
+        add('China')
+    if 'инд' in folded:
+        add('India')
+    if 'сша' in folded or 'соединенн' in folded:
+        add('United States')
+    if 'европ' in folded or re.search(r'(?<![а-яё])ес(?![а-яё])', folded, re.I):
+        add('Europe')
+    if 'brent' in folded or 'брент' in folded:
+        add('Brent')
+    if 'нефт' in folded:
+        add('oil')
+    if 'цен' in folded:
+        add('price')
+    if re.search(r'т\s*вт[·\s-]*ч|тwh|twh', folded, re.I):
+        add('TWh')
+
+    for number in re.findall(r'\d+(?:[.,]\d+)?%?', raw):
+        add(number.replace(',', '.'))
+    return ' '.join(terms)
+
+
 def api_failure_message(exc):
     # Use only fixed safe templates: exceptions may contain keys or provider payloads.
     if exc.status in (401, 403):
@@ -279,10 +342,13 @@ def answer_from_history(question, history):
 
 
 class RAGService:
-    def __init__(self, retriever, client, translation='on', metrics=None, repair_quotes=False, verify_claims=False, verify_relevance=False):
+    def __init__(self, retriever, client, translation='on', metrics=None, repair_quotes=False, verify_claims=False, verify_relevance=False, query_timeout=30.0):
         if translation not in {'on','off'}:
             raise ValueError('translation must be on/off')
+        if not isinstance(query_timeout, (int, float)) or isinstance(query_timeout, bool) or not 1 <= query_timeout <= 60:
+            raise ValueError('query_timeout must be 1..60 seconds')
         self.retriever, self.client, self.translation, self.metrics = retriever, client, translation, metrics
+        self.query_timeout = float(query_timeout)
         self.repair_quotes = repair_quotes
         self.verify_claims = verify_claims
         self.verify_relevance = verify_relevance
@@ -318,17 +384,34 @@ class RAGService:
                                     and re.search(r'[а-яё]', question, re.I)):
                                 try:
                                     if hasattr(self.client, 'prepare_query'):
-                                        prepared = await self.client.prepare_query(key, question, conversation_context(history))
+                                        prepared = await asyncio.wait_for(
+                                            self.client.prepare_query(key, question, conversation_context(history)),
+                                            timeout=self.query_timeout,
+                                        )
                                         query = prepared['query_ru']
                                         alternate = prepared['query_en']
                                     else:  # compatibility for simple test/dummy clients
                                         alternate = await self.client.translate_query(key, query)
+                                except asyncio.TimeoutError:
+                                    fallback, translation_reason = True, 'timeout'
                                 except APIError as exc:
                                     fallback, translation_reason = True, exc.reason
                             async with self._search_lock:
-                                args = (query, 6, alternate) if alternate else (query, 6)
-                                hits = prepare_context(await asyncio.to_thread(self.retriever.search, *args))
-                                rerank_status = getattr(self.retriever, "last_status", "off")
+                                if fallback and getattr(self.retriever, 'vectors', None) is not None:
+                                    # Provider-side query preparation failed. Keep the Russian query for lexical/local
+                                    # evidence, but add a deterministic English retrieval hint for the English IEA
+                                    # corpus. For causal questions, neutralise the asserted direction first so the
+                                    # evidence can confirm or correct the premise. No answer facts are hard-coded.
+                                    rescue_query = neutralize_change_premise(query)
+                                    rescue_en = local_en_rescue_query(rescue_query)
+                                    query = rescue_query
+                                    args = (rescue_query, 6, rescue_en) if rescue_en else (rescue_query, 6)
+                                    hits = prepare_context(await asyncio.to_thread(self.retriever.search, *args))
+                                    rerank_status = getattr(self.retriever, "last_status", "off")
+                                else:
+                                    args = (query, 6, alternate) if alternate else (query, 6)
+                                    hits = prepare_context(await asyncio.to_thread(self.retriever.search, *args))
+                                    rerank_status = getattr(self.retriever, "last_status", "off")
                         if not hits:
                             result = AnswerResult(NO_ANSWER, 'no_hits')
                         else:

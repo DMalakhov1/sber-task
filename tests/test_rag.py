@@ -44,6 +44,7 @@ def test_semantic_path_supports_different_language_with_mock(tmp_path):
     save_index([HIT, other], tmp_path, vectors=np.eye(2), model='test-only')
     assert Retriever(tmp_path, embedder=Embedder()).search('электроэнергия')[0]['id'] == HIT['id']
 
+
 def test_corrupt_index_rejected(tmp_path):
     m = save_index([HIT], tmp_path)
     (tmp_path / m['chunks_file']).write_text('[]')

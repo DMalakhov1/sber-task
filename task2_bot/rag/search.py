@@ -81,7 +81,8 @@ class Retriever:
             scores += idf * tf * 2.5 / (tf + 1.5 * (.25 + .75 * self.lengths / self.avg_length))
         ranks = np.zeros(len(scores))
         for rank, idx in enumerate(sorted(candidates, key=lambda i: -scores[i])[:30]):
-            if scores[idx] > 0 and self.mode != 'semantic': ranks[idx] += (self.lexical_weight if self.vectors is not None else 1) / (60 + rank + 1)
+            if scores[idx] > 0 and self.mode != 'semantic':
+                ranks[idx] += (self.lexical_weight if self.vectors is not None else 1) / (60 + rank + 1)
         semantic = None
         if self.vectors is not None:
             q = self._query_vector(question)

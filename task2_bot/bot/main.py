@@ -288,13 +288,28 @@ def main():
                           lexical_weight=float(os.getenv("RAG_LEXICAL_WEIGHT", "1.0")))
     rerank_mode = os.getenv("RAG_RERANK", "off")
     if rerank_mode not in {'on', 'off'}: p.exit(1, 'RAG_RERANK должен быть on/off\n')
+    try:
+        query_timeout = float(os.getenv("RAG_QUERY_PREP_TIMEOUT_SECONDS", "30"))
+    except ValueError:
+        p.exit(1, 'RAG_QUERY_PREP_TIMEOUT_SECONDS должен быть числом от 1 до 60\n')
+    if not 1 <= query_timeout <= 60:
+        p.exit(1, 'RAG_QUERY_PREP_TIMEOUT_SECONDS должен быть от 1 до 60\n')
     if rerank_mode == 'on':
         from task2_bot.rag.rerank import RerankingRetriever, LocalReranker, DEFAULT_MODEL
         retriever = RerankingRetriever(retriever, LocalReranker(
             os.getenv("RAG_RERANK_MODEL", DEFAULT_MODEL),
             device=os.getenv("RAG_RERANK_DEVICE", "cpu")),
             candidates=int(os.getenv("RAG_RERANK_CANDIDATES", "24")))
-    app = build_application(token, RAGService(retriever, client, translation=os.getenv("RAG_TRANSLATION", "on"), metrics=metrics, repair_quotes=os.getenv("RAG_REPAIR_QUOTES", "off") == "on", verify_claims=os.getenv("RAG_VERIFY_CLAIMS", "on") == "on", verify_relevance=os.getenv("RAG_VERIFY_RELEVANCE", "off") == "on"), client,
+    service = RAGService(
+        retriever, client,
+        translation=os.getenv("RAG_TRANSLATION", "on"),
+        metrics=metrics,
+        repair_quotes=os.getenv("RAG_REPAIR_QUOTES", "on") == "on",
+        verify_claims=os.getenv("RAG_VERIFY_CLAIMS", "on") == "on",
+        verify_relevance=os.getenv("RAG_VERIFY_RELEVANCE", "off") == "on",
+        query_timeout=query_timeout,
+    )
+    app = build_application(token, service, client,
                             ttl=max(60, int(os.getenv('SESSION_TTL_SECONDS', '1800'))),
                             concurrency=int(os.getenv('BOT_CONCURRENCY', '8')), debug=a.debug,
                             provider_name=client.base_url)

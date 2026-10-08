@@ -39,7 +39,7 @@ def test_translation_fallback_does_not_block_answer():
     result=asyncio.run(RAGService(r,c).answer_detailed('Спрос?', 'FAKE'))
     assert result.reason=='ok' and result.translation_fallback
     assert result.translation_reason=='translation_invalid'
-    assert r.search.call_args.args==('Спрос?',6)
+    assert r.search.call_args.args == ("Спрос?", 6, "demand")
 
 
 def test_translation_off_no_extra_call():
@@ -306,3 +306,69 @@ def test_source_memory_short_meta_question_still_uses_previous_citations():
     history=[{'reason':'ok','sources':[{'title':'Previous','page':7,'url':'https://example.org/prev.pdf'}]}]
     result=answer_from_history('Где это написано?', history)
     assert result is not None and 'Previous' in result.text and 'стр. 7' in result.text
+
+
+def test_query_preparation_failure_uses_bilingual_rescue_and_keeps_answering():
+    calls=[]
+    class Retriever:
+        vectors=True
+        mode='hybrid'
+        def search(self, question, top_k=6, alternate_query=None):
+            calls.append((question, top_k, alternate_query))
+            return [HIT]
+    c=SimpleNamespace(
+        prepare_query=AsyncMock(side_effect=APIError('bad', reason='translation_invalid')),
+        complete=AsyncMock(return_value=GOOD),
+    )
+    result=asyncio.run(RAGService(Retriever(), c).answer_detailed(
+        'Насколько вырос мировой спрос на электроэнергию в 2024 году?', 'FAKE'))
+    assert result.reason=='ok' and result.translation_fallback
+    assert result.translation_reason=='translation_invalid'
+    assert calls and 'global' in calls[0][2] and 'electricity' in calls[0][2] and 'demand' in calls[0][2]
+
+
+def test_false_premise_rescue_query_is_direction_neutral():
+    calls=[]
+    class Retriever:
+        vectors=True
+        mode='hybrid'
+        def search(self, question, top_k=6, alternate_query=None):
+            calls.append((question, alternate_query))
+            return [HIT]
+    c=SimpleNamespace(
+        prepare_query=AsyncMock(side_effect=APIError('bad', reason='api_error')),
+        complete=AsyncMock(return_value=GOOD),
+    )
+    result=asyncio.run(RAGService(Retriever(), c).answer_detailed(
+        'Почему мировой спрос снизился на 4,3% в 2024 году?', 'FAKE'))
+    assert result.reason=='ok' and result.translation_fallback
+    query, alternate = calls[0]
+    assert 'снизился' not in query.casefold() and 'изменение' in query.casefold()
+    assert '4,3' in query and '2024' in query
+    assert 'global' in alternate and 'demand' in alternate and 'change' in alternate
+    assert '4.3%' in alternate and '2024' in alternate
+    assert result.resolved_query == query
+
+
+def test_query_preparation_timeout_falls_back_instead_of_failing_request():
+    calls=[]
+    class Retriever:
+        vectors=True
+        mode='hybrid'
+        def search(self, question, top_k=6, alternate_query=None):
+            calls.append(alternate_query)
+            return [HIT]
+    c=SimpleNamespace(
+        prepare_query=AsyncMock(side_effect=asyncio.TimeoutError()),
+        complete=AsyncMock(return_value=GOOD),
+    )
+    result=asyncio.run(RAGService(Retriever(), c).answer_detailed('Спрос в 2024 году?', 'FAKE'))
+    assert result.reason=='ok' and result.translation_fallback
+    assert result.translation_reason=='timeout'
+    assert calls and 'demand' in calls[0] and '2024' in calls[0]
+
+
+def test_local_en_rescue_query_preserves_numbers_and_core_energy_terms():
+    from task2_bot.bot.service import local_en_rescue_query
+    query=local_en_rescue_query('мировой спрос изменение на 4,3% в 2024 году')
+    assert query == 'global demand change 4.3% 2024'

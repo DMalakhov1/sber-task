@@ -117,7 +117,10 @@ class OpenAIClient:
             'only to recover the referent/entity mentioned by the user; source_titles may be used only to preserve report scope. '
             'If the current message starts a new topic, do not mix it with the previous topic. Do not answer the question and do not invent facts. '
             'Prefer constraints explicitly present in the current question over older context. Preserve all current numbers, units, '
-            'regions, negation and report names; inherit older details only when the current wording clearly refers back to them. '
+            'regions, report names and ordinary negation; inherit older details only when the current wording clearly refers back to them. '
+            'If the question assumes a direction of change as a premise (for example, asks why a metric increased or decreased), '
+            'phrase the retrieval query neutrally as a change/trend with the same metric, number, period and region. '
+            'Do not invent or reverse the direction; let retrieved evidence confirm or correct the premise. '
             'Return JSON exactly as {"query_ru":"standalone Russian retrieval query", '
             '"query_en":"standalone English retrieval query"}.'
         )
