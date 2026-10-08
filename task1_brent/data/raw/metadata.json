@@ -1,0 +1,131 @@
+{
+  "imported_on": "2026-10-06",
+  "source_archive": "sber_task1_selected_data-2.zip",
+  "source_archive_sha256": "01467e0684f3c78c83671f80d90c2d9ce0e659dfceaac27ebe021f8e12a8f470",
+  "original_download_date": null,
+  "data_updated": false,
+  "notes": "Пользовательские файлы: значения и SHA-256 сохранены; имена макрофайлов сокращены. Данные не обновлялись. Полнота марта 2026 независимо не проверена.",
+  "brent_source_url_from_supplied_readme": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M",
+  "files": [
+    {
+      "file": "unemployment.csv",
+      "bytes": 2857,
+      "sha256": "157eb7c5154b6a3f89d94206976a469e7ccca167f64a0b1bcb513944ba718b17",
+      "original_name": "Безработица.csv"
+    },
+    {
+      "file": "euro_area_cpi.xlsx",
+      "bytes": 5735,
+      "sha256": "76afcfb2fdd4a4858ef4cdf4933d7b036d8fc2f23d95f7b4b2f7ecec62ff72df",
+      "original_name": "еврозона-уровень-инфляции-в-годовом-выражении_cb.xlsx"
+    },
+    {
+      "file": "russia_cpi.xlsx",
+      "bytes": 6924,
+      "sha256": "8360ad33ce30526135eef7bcc2e53dd6a00f5fac26e58edb2536a77c065ea53f",
+      "original_name": "Инфляция_только_дата_и_инфляция.xlsx"
+    },
+    {
+      "file": "usd_rub.xlsx",
+      "bytes": 99847,
+      "sha256": "0fe574e4b99c50fddcad388ba68899df03dc26e87d276db5b852993bba6238b6",
+      "original_name": "Курс_доллара_цб.xlsx"
+    },
+    {
+      "file": "russia_public_debt.xlsx",
+      "bytes": 6698,
+      "sha256": "a43922c8d5d62158d07d6ad83960e6828b63296c25a4f41572ecbb7ee7cae78c",
+      "original_name": "россия-внутренний-государственный-долг.xlsx"
+    },
+    {
+      "file": "russia_private_credit.xlsx",
+      "bytes": 6626,
+      "sha256": "1bc0c38af4177f30de52739e1fb83e0389bd2337afe0ebaf55755dbfc67b0a77",
+      "original_name": "россия-кредит-частному-сектору.xlsx"
+    },
+    {
+      "file": "russia_retail_yoy.xlsx",
+      "bytes": 5918,
+      "sha256": "9a402da5f49f09c6c5cb7d5ad6bd84b70912564bd8421ed8d49c0eefb5085b9d",
+      "original_name": "россия-розничная-торговля-в-годовом-выражении.xlsx"
+    },
+    {
+      "file": "russia_wages.xlsx",
+      "bytes": 6075,
+      "sha256": "e6b9713ee480545fc804c5a038c7913efbf9206248fcba1c9571ddb47aa9f213",
+      "original_name": "россия-среднемесячная-зарплата.xlsx"
+    },
+    {
+      "file": "us_cpi.xlsx",
+      "bytes": 5749,
+      "sha256": "b207c79d202c74c12958c986726995fd80c2208148da02ead3e70921245656df",
+      "original_name": "сша-уровень-инфляции-в-годовом-выражении_cb.xlsx"
+    },
+    {
+      "file": "russia_m2.xlsx",
+      "bytes": 6349,
+      "sha256": "26db3991b0b88dc3ddc27afe3f66810c5576850fffae2066dd385b2152dd4b7b",
+      "original_name": "M2_russia_cboans.xlsx"
+    },
+    {
+      "file": "ruonia.xlsx",
+      "bytes": 206170,
+      "sha256": "63d2e5c557cbeb45f2575df20c7fb1c27a02528c33d3b0cd1ad662528e4c76a2",
+      "original_name": "RUONIA_цб.xlsx"
+    },
+    {
+      "file": "russia_industry_yoy.xlsx",
+      "bytes": 5887,
+      "sha256": "95eb86c0f90fe0e3ab554c86d3fa0d75a002e26b340fac7155210fa8f28a7452",
+      "original_name": "россия-промышленное-производство-в-годовом-выражении_cb.xlsx"
+    },
+    {
+      "file": "russia_retail_mom.xlsx",
+      "bytes": 5939,
+      "sha256": "ee2d19c46e85c8335afd480c0283acde7bf1661b837010ba92bce8ffccc4e00b",
+      "original_name": "россия-розничная-торговля-к-предыдущему-месяцу_cboans.xlsx"
+    },
+    {
+      "file": "russia_cpi_key_rate.xlsx",
+      "bytes": 14094,
+      "sha256": "a92d0eecb65e9c6b4971785e2148bcd17b5896e5868d47583a3149a5d2bfe81f",
+      "original_name": "Инфляция и ключевая ставка Банка России_F17_09_2013_T17_03_2026.xlsx"
+    },
+    {
+      "file": "brent_monthly_1987-2026.csv",
+      "bytes": 7977,
+      "sha256": "1e47315289d5a2fd0836972cb73eda36e96e8623be9e108359380e63f24cf452"
+    },
+    {
+      "file": "brent_macro_diploma_2011-2025.csv",
+      "bytes": 51549,
+      "sha256": "19b0dcbdb42e046db7bd0911181e05b54b06613f8c7e2d89d0000f2110e3541d"
+    }
+  ],
+  "filename_map": {
+    "Безработица.csv": "unemployment.csv",
+    "еврозона-уровень-инфляции-в-годовом-выражении_cb.xlsx": "euro_area_cpi.xlsx",
+    "Инфляция_только_дата_и_инфляция.xlsx": "russia_cpi.xlsx",
+    "Курс_доллара_цб.xlsx": "usd_rub.xlsx",
+    "россия-внутренний-государственный-долг.xlsx": "russia_public_debt.xlsx",
+    "россия-кредит-частному-сектору.xlsx": "russia_private_credit.xlsx",
+    "россия-розничная-торговля-в-годовом-выражении.xlsx": "russia_retail_yoy.xlsx",
+    "россия-среднемесячная-зарплата.xlsx": "russia_wages.xlsx",
+    "сша-уровень-инфляции-в-годовом-выражении_cb.xlsx": "us_cpi.xlsx",
+    "M2_russia_cboans.xlsx": "russia_m2.xlsx",
+    "RUONIA_цб.xlsx": "ruonia.xlsx",
+    "россия-промышленное-производство-в-годовом-выражении_cb.xlsx": "russia_industry_yoy.xlsx",
+    "россия-розничная-торговля-к-предыдущему-месяцу_cboans.xlsx": "russia_retail_mom.xlsx",
+    "Инфляция и ключевая ставка Банка России_F17_09_2013_T17_03_2026.xlsx": "russia_cpi_key_rate.xlsx"
+  },
+  "independent_verification": {
+    "verified_on": "2026-10-07",
+    "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=M",
+    "matched_months": {
+      "2026-01": 66.6,
+      "2026-02": 70.89,
+      "2026-03": 103.13
+    },
+    "note": "Проверка опубликованных месячных значений; дата первоначальной загрузки не установлена."
+  }
+}

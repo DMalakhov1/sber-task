@@ -1,0 +1,4 @@
+-r requirements.txt
+# Проверяемая связка API; PyTorch установится как зависимость.
+sentence-transformers==5.1.2
+transformers==4.57.6

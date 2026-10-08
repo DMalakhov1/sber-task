@@ -1,0 +1,7 @@
+[
+  {
+    "period": "test",
+    "origin": "2021-07-01",
+    "warning": "ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals"
+  }
+]

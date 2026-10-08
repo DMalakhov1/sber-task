@@ -1,0 +1,83 @@
+{
+  "k": 6,
+  "evaluated": 2,
+  "hit_rate": 1.0,
+  "mrr": 1.0,
+  "note": "Малый набор с заранее подготовленным английским переводом. Проверка retrieval, не реального перевода DeepSeek и не корректности ответов.",
+  "rows": [
+    {
+      "id": "false_1",
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "id": "iea_electricity_2025:p7:c0",
+          "source": "iea_electricity_2025",
+          "page": 7
+        },
+        {
+          "id": "iea_electricity_2025:p8:c1",
+          "source": "iea_electricity_2025",
+          "page": 8
+        },
+        {
+          "id": "iea_electricity_2025:p10:c0",
+          "source": "iea_electricity_2025",
+          "page": 10
+        },
+        {
+          "id": "iea_electricity_2025:p142:c0",
+          "source": "iea_electricity_2025",
+          "page": 142
+        },
+        {
+          "id": "iea_electricity_2025:p52:c0",
+          "source": "iea_electricity_2025",
+          "page": 52
+        },
+        {
+          "id": "iea_electricity_2025:p3:c0",
+          "source": "iea_electricity_2025",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "number_1",
+      "hit": true,
+      "rank": 1,
+      "retrieved": [
+        {
+          "id": "iea_electricity_2025:p7:c0",
+          "source": "iea_electricity_2025",
+          "page": 7
+        },
+        {
+          "id": "iea_electricity_2025:p52:c0",
+          "source": "iea_electricity_2025",
+          "page": 52
+        },
+        {
+          "id": "iea_electricity_2025:p8:c0",
+          "source": "iea_electricity_2025",
+          "page": 8
+        },
+        {
+          "id": "iea_electricity_2025:p123:c0",
+          "source": "iea_electricity_2025",
+          "page": 123
+        },
+        {
+          "id": "iea_electricity_2025:p131:c0",
+          "source": "iea_electricity_2025",
+          "page": 131
+        },
+        {
+          "id": "iea_electricity_2025:p8:c1",
+          "source": "iea_electricity_2025",
+          "page": 8
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "20261006T220025342960Z",
+  "historical_api_unconfirmed": true,
+  "results": [
+    {
+      "url": "https://br.so-ups.ru/",
+      "error": "URLError",
+      "elapsed_seconds": 6.01
+    },
+    {
+      "url": "https://br.so-ups.ru/robots.txt",
+      "error": "URLError",
+      "elapsed_seconds": 6.008
+    },
+    {
+      "url": "http://br.so-ups.ru:8090/PublicApi/PublicApiService.svc?wsdl",
+      "error": "TimeoutError",
+      "elapsed_seconds": 6.007
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "backend": "semantic",
+  "model": "intfloat/multilingual-e5-small",
+  "chunks": 1136,
+  "corpus": {
+    "sipr_2025_2030": {
+      "sha256": "12588a7814afdaea5875c0375e78c47f3c74799d0ae54223353c0dad9e6c7591",
+      "pages": 236,
+      "weak_pages": []
+    },
+    "iea_electricity_2025": {
+      "sha256": "08fffb29edf8468c0a795a9b4eab2298a8059dce4307e97ade5b5ab4e9179f9e",
+      "pages": 200,
+      "weak_pages": [
+        1,
+        121,
+        200
+      ]
+    },
+    "iea_global_energy_review_2025": {
+      "sha256": "b6396909c6a0ca95bd32bdb5863dbf6bb317cad3ce799294ec2a2883650992f2",
+      "pages": 43,
+      "weak_pages": [
+        1,
+        43
+      ]
+    }
+  }
+}

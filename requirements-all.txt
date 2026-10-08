@@ -1,0 +1,4 @@
+-r requirements-dev.txt
+-r task1_brent/requirements.txt
+-r task2_bot/requirements.txt
+-r task3_excel/requirements.txt

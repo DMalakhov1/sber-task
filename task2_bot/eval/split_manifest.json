@@ -1,0 +1,30 @@
+{
+  "created_on": "2026-10-06",
+  "policy": "Fixed before new measurements. Legacy/tuned items are dev; related variants share group and split. No test tuning in this revision.",
+  "questions_sha256": "30fc29c80084bc52d8e452f96a49fec9415038a16e8822b861e1033ef1b4eb81",
+  "groups": {
+    "horizons": "dev",
+    "s2": "dev",
+    "s3": "dev",
+    "s4": "test",
+    "s5": "test",
+    "s6": "test",
+    "global_growth": "dev",
+    "drivers": "dev",
+    "e4": "test",
+    "e5": "test",
+    "e6": "test",
+    "g3": "dev",
+    "g4": "test",
+    "g5": "test",
+    "g6": "test",
+    "o1": "dev",
+    "o2": "test",
+    "o3": "dev",
+    "o4": "test"
+  },
+  "counts": {
+    "dev": 21,
+    "test": 15
+  }
+}

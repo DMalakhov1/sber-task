@@ -1,0 +1,8 @@
+# Рабочие диапазоны; см. VALIDATION.md о фактически проверенных версиях.
+python-telegram-bot>=22,<23
+httpx[socks]>=0.27,<0.29
+python-dotenv>=1,<2
+pypdf>=5,<7
+numpy>=1.26,<3
+beautifulsoup4>=4.12,<5
+openai>=1.50,<2

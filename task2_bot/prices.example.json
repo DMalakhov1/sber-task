@@ -1,0 +1,8 @@
+{
+  "model": "",
+  "currency": "USD",
+  "price_tier_and_checked_at": "Заполните по актуальному тарифу перед измерением",
+  "input_hit_per_million": null,
+  "input_miss_per_million": null,
+  "output_per_million": null
+}

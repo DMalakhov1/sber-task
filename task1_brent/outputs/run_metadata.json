@@ -1,0 +1,34 @@
+{
+  "python": "3.12.14",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "statsmodels": "0.14.5",
+    "matplotlib": "3.10.8"
+  },
+  "source_sha256": {
+    "run.py": "c7b5185b6661f7c8cdcab089be9f906d7b89423b52c60363ac8a270401c392a0",
+    "__init__.py": "390a3eac0fdbd970a31c5f50946b6335eace99d7eff34ec7d60d1fa6c680075c",
+    "backtest.py": "180f7c0ccd618245285fc440d50981b746437b5349c2adfe50a4b8fbd9a0e314",
+    "data.py": "4a42c70a48888f48978d8c734aa38d1c75da9dbc55cd7bd10f0888d10e7681eb",
+    "models.py": "86b4d61988e512547df3dd6e7d76e4f471c86e3a3e3dcaca48d4074175bc2105",
+    "report.py": "3053a18ff1e6c5b556befe1e8b84c4db5d13a970d64897cecfc81854d4bb32e5"
+  },
+  "models": {
+    "direct_target": "log_price",
+    "ridge_alpha": 1.0,
+    "hgb_max_iter": 200,
+    "hgb_seed": 42,
+    "mean_reversion_window": 120,
+    "mean_reversion_half_life": 12
+  },
+  "origin": "2026-03-01",
+  "horizons": 21,
+  "validation_start": "2022-01-01",
+  "validation_status": "retrospective; previously inspected in Kimi report",
+  "macro_status": "experimental; common one-month publication lag not verified",
+  "interval_method": "absolute log-ratio residual quantile per horizon; calibration target strictly before validation start",
+  "data_sha256": "1e47315289d5a2fd0836972cb73eda36e96e8623be9e108359380e63f24cf452",
+  "release_note": "07.10.2026: обновлены подписи источника и график; числовые результаты не изменены."
+}

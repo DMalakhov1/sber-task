@@ -1,0 +1,50 @@
+{
+  "mode": "full",
+  "neural": true,
+  "epochs_max": 160,
+  "seeds": [
+    11,
+    23,
+    37
+  ],
+  "qrnn_seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "stride_months": 3,
+  "elapsed_seconds": 298.3,
+  "data_sha256": "1e47315289d5a2fd0836972cb73eda36e96e8623be9e108359380e63f24cf452",
+  "selection_rule": "Validation MAE separately per horizon; frozen before test",
+  "test_status": "Retrospective: history previously inspected; not a pristine holdout",
+  "target": "USD/barrel; neural standardized cumulative log-return, exp inverse; point exp is not bias-corrected mean",
+  "split": [
+    {
+      "period": "train",
+      "start": "1987-05-01",
+      "end": "2014-06-01",
+      "n": 326
+    },
+    {
+      "period": "validation",
+      "start": "2014-07-01",
+      "end": "2020-04-01",
+      "n": 70
+    },
+    {
+      "period": "test",
+      "start": "2020-05-01",
+      "end": "2026-03-01",
+      "n": 71
+    }
+  ],
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "statsmodels": "0.14.5",
+    "scikit-learn": "1.8.0",
+    "torch": "2.14.1+cpu"
+  }
+}

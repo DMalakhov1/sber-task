@@ -1,0 +1,14 @@
+file,rows,dated_rows,first,last,frequency,duplicate_dates,extra_rows_in_month,missing_months,used_in_extended
+euro_area_cpi.xlsx,195,195,2010-01-31,2026-03-31,monthly,0,0,,False
+ruonia.xlsx,4004,4004,2010-01-11,2026-04-16,daily_business,0,,,False
+russia_cpi.xlsx,194,194,2010-01-01,2026-02-01,monthly,0,0,,False
+russia_cpi_key_rate.xlsx,194,194,2010-01-31,2026-02-01,monthly,0,0,,False
+russia_industry_yoy.xlsx,194,194,2010-01-31,2026-02-28,monthly,0,0,,False
+russia_m2.xlsx,195,195,2010-01-31,2026-03-31,monthly,0,0,,False
+russia_private_credit.xlsx,208,208,2010-01-29,2026-02-28,monthly,0,14,,False
+russia_public_debt.xlsx,195,195,2010-01-31,2026-03-31,monthly,0,0,,False
+russia_retail_mom.xlsx,194,194,2010-01-31,2026-02-28,monthly,0,0,,False
+russia_retail_yoy.xlsx,194,194,2010-01-31,2026-02-28,monthly,0,0,,False
+russia_wages.xlsx,193,193,2010-01-31,2026-01-31,monthly,0,0,,False
+us_cpi.xlsx,194,194,2010-01-31,2026-03-31,monthly,0,0,2025-10,False
+usd_rub.xlsx,4021,4021,2010-01-01,2026-04-16,daily_business,0,,,False

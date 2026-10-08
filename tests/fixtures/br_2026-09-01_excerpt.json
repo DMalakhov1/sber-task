@@ -1,0 +1,66 @@
+{
+  "provenance": {
+    "source": "https://br.so-ups.ru/webapi/api/",
+    "retrieved": "2026-10-07",
+    "date": "2026-09-01",
+    "note": "Публичные ответы, только первый интервал двух ОЭС; без заголовков и cookies"
+  },
+  "genconsum": [
+    {
+      "m_Item1": 530000,
+      "m_Item2": [
+        {
+          "INTERVAL": 0,
+          "M_DATE": "2026-09-01T00:00:00+03:00",
+          "PRICE_ZONE_ID": 1,
+          "POWER_SYS_ID": 530000,
+          "E_USE_FACT": 23640.0,
+          "E_USE_PLAN": 23980.0,
+          "GEN_FACT": 22221.0,
+          "GEN_PLAN": 22044.0
+        }
+      ]
+    },
+    {
+      "m_Item1": 540000,
+      "m_Item2": [
+        {
+          "INTERVAL": 0,
+          "M_DATE": "2026-09-01T00:00:00+03:00",
+          "PRICE_ZONE_ID": 8,
+          "POWER_SYS_ID": 540000,
+          "E_USE_FACT": 4729.0,
+          "E_USE_PLAN": 4621.0,
+          "GEN_FACT": 4722.0,
+          "GEN_PLAN": 4621.0
+        }
+      ]
+    }
+  ],
+  "hourly": [
+    {
+      "m_Item1": 530000,
+      "m_Item2": [
+        {
+          "INTERVAL": 0,
+          "AVERAGE_PRICE": 929.5288,
+          "MAX_PRICE": 3730.42017,
+          "AVERAGE_ACCEPT_PRICE": 929.5288,
+          "RSV_PRICE": 1551.135
+        }
+      ]
+    },
+    {
+      "m_Item1": 540000,
+      "m_Item2": [
+        {
+          "INTERVAL": 0,
+          "AVERAGE_PRICE": null,
+          "MAX_PRICE": null,
+          "AVERAGE_ACCEPT_PRICE": null,
+          "RSV_PRICE": null
+        }
+      ]
+    }
+  ]
+}

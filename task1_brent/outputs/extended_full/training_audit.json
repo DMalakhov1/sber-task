@@ -1,0 +1,2837 @@
+[
+  {
+    "period": "validation",
+    "origin": "2014-06-01",
+    "model": "rnn",
+    "epochs": [
+      28,
+      40,
+      19
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 294,
+    "max_training_target": 325,
+    "inner_train_max_target": 245,
+    "inner_validation_first_origin": 246
+  },
+  {
+    "period": "validation",
+    "origin": "2014-06-01",
+    "model": "lstm",
+    "epochs": [
+      30,
+      31,
+      39
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 294,
+    "max_training_target": 325,
+    "inner_train_max_target": 245,
+    "inner_validation_first_origin": 246
+  },
+  {
+    "period": "validation",
+    "origin": "2014-06-01",
+    "model": "cnn",
+    "epochs": [
+      101,
+      22,
+      14
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 294,
+    "max_training_target": 325,
+    "inner_train_max_target": 245,
+    "inner_validation_first_origin": 246
+  },
+  {
+    "period": "validation",
+    "origin": "2014-06-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      153
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 294,
+    "max_training_target": 325,
+    "inner_train_max_target": 245,
+    "inner_validation_first_origin": 246,
+    "crossing_fraction_raw": 0.0380952380952381
+  },
+  {
+    "period": "validation",
+    "origin": "2014-09-01",
+    "model": "rnn",
+    "epochs": [
+      28,
+      40,
+      18
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 297,
+    "max_training_target": 328,
+    "inner_train_max_target": 247,
+    "inner_validation_first_origin": 248
+  },
+  {
+    "period": "validation",
+    "origin": "2014-09-01",
+    "model": "lstm",
+    "epochs": [
+      30,
+      32,
+      39
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 297,
+    "max_training_target": 328,
+    "inner_train_max_target": 247,
+    "inner_validation_first_origin": 248
+  },
+  {
+    "period": "validation",
+    "origin": "2014-09-01",
+    "model": "cnn",
+    "epochs": [
+      98,
+      23,
+      14
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 297,
+    "max_training_target": 328,
+    "inner_train_max_target": 247,
+    "inner_validation_first_origin": 248
+  },
+  {
+    "period": "validation",
+    "origin": "2014-09-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      154,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 297,
+    "max_training_target": 328,
+    "inner_train_max_target": 247,
+    "inner_validation_first_origin": 248,
+    "crossing_fraction_raw": 0.05714285714285714
+  },
+  {
+    "period": "validation",
+    "origin": "2014-12-01",
+    "model": "rnn",
+    "epochs": [
+      28,
+      36,
+      17
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 300,
+    "max_training_target": 331,
+    "inner_train_max_target": 250,
+    "inner_validation_first_origin": 251
+  },
+  {
+    "period": "validation",
+    "origin": "2014-12-01",
+    "model": "lstm",
+    "epochs": [
+      31,
+      32,
+      41
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 300,
+    "max_training_target": 331,
+    "inner_train_max_target": 250,
+    "inner_validation_first_origin": 251
+  },
+  {
+    "period": "validation",
+    "origin": "2014-12-01",
+    "model": "cnn",
+    "epochs": [
+      83,
+      28,
+      4
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 300,
+    "max_training_target": 331,
+    "inner_train_max_target": 250,
+    "inner_validation_first_origin": 251
+  },
+  {
+    "period": "validation",
+    "origin": "2014-12-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 300,
+    "max_training_target": 331,
+    "inner_train_max_target": 250,
+    "inner_validation_first_origin": 251,
+    "crossing_fraction_raw": 0.0380952380952381
+  },
+  {
+    "period": "validation",
+    "origin": "2015-03-01",
+    "model": "rnn",
+    "epochs": [
+      26,
+      32,
+      15
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 303,
+    "max_training_target": 334,
+    "inner_train_max_target": 252,
+    "inner_validation_first_origin": 253
+  },
+  {
+    "period": "validation",
+    "origin": "2015-03-01",
+    "model": "lstm",
+    "epochs": [
+      32,
+      32,
+      39
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 303,
+    "max_training_target": 334,
+    "inner_train_max_target": 252,
+    "inner_validation_first_origin": 253
+  },
+  {
+    "period": "validation",
+    "origin": "2015-03-01",
+    "model": "cnn",
+    "epochs": [
+      73,
+      62,
+      4
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 303,
+    "max_training_target": 334,
+    "inner_train_max_target": 252,
+    "inner_validation_first_origin": 253
+  },
+  {
+    "period": "validation",
+    "origin": "2015-03-01",
+    "model": "qrnn",
+    "epochs": [
+      146,
+      160,
+      160,
+      160,
+      159
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 303,
+    "max_training_target": 334,
+    "inner_train_max_target": 252,
+    "inner_validation_first_origin": 253,
+    "crossing_fraction_raw": 0.047619047619047616
+  },
+  {
+    "period": "validation",
+    "origin": "2015-06-01",
+    "model": "rnn",
+    "epochs": [
+      24,
+      30,
+      14
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 306,
+    "max_training_target": 337,
+    "inner_train_max_target": 254,
+    "inner_validation_first_origin": 255
+  },
+  {
+    "period": "validation",
+    "origin": "2015-06-01",
+    "model": "lstm",
+    "epochs": [
+      30,
+      35,
+      37
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 306,
+    "max_training_target": 337,
+    "inner_train_max_target": 254,
+    "inner_validation_first_origin": 255
+  },
+  {
+    "period": "validation",
+    "origin": "2015-06-01",
+    "model": "cnn",
+    "epochs": [
+      76,
+      71,
+      3
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 306,
+    "max_training_target": 337,
+    "inner_train_max_target": 254,
+    "inner_validation_first_origin": 255
+  },
+  {
+    "period": "validation",
+    "origin": "2015-06-01",
+    "model": "qrnn",
+    "epochs": [
+      158,
+      160,
+      160,
+      156,
+      159
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 306,
+    "max_training_target": 337,
+    "inner_train_max_target": 254,
+    "inner_validation_first_origin": 255,
+    "crossing_fraction_raw": 0.0380952380952381
+  },
+  {
+    "period": "validation",
+    "origin": "2015-09-01",
+    "model": "rnn",
+    "epochs": [
+      22,
+      37,
+      25
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 309,
+    "max_training_target": 340,
+    "inner_train_max_target": 257,
+    "inner_validation_first_origin": 258
+  },
+  {
+    "period": "validation",
+    "origin": "2015-09-01",
+    "model": "lstm",
+    "epochs": [
+      25,
+      23,
+      34
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 309,
+    "max_training_target": 340,
+    "inner_train_max_target": 257,
+    "inner_validation_first_origin": 258
+  },
+  {
+    "period": "validation",
+    "origin": "2015-09-01",
+    "model": "cnn",
+    "epochs": [
+      4,
+      4,
+      3
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 309,
+    "max_training_target": 340,
+    "inner_train_max_target": 257,
+    "inner_validation_first_origin": 258
+  },
+  {
+    "period": "validation",
+    "origin": "2015-09-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 309,
+    "max_training_target": 340,
+    "inner_train_max_target": 257,
+    "inner_validation_first_origin": 258,
+    "crossing_fraction_raw": 0.10476190476190476
+  },
+  {
+    "period": "validation",
+    "origin": "2015-12-01",
+    "model": "rnn",
+    "epochs": [
+      26,
+      149,
+      35
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 312,
+    "max_training_target": 343,
+    "inner_train_max_target": 259,
+    "inner_validation_first_origin": 260
+  },
+  {
+    "period": "validation",
+    "origin": "2015-12-01",
+    "model": "lstm",
+    "epochs": [
+      23,
+      15,
+      34
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 312,
+    "max_training_target": 343,
+    "inner_train_max_target": 259,
+    "inner_validation_first_origin": 260
+  },
+  {
+    "period": "validation",
+    "origin": "2015-12-01",
+    "model": "cnn",
+    "epochs": [
+      5,
+      4,
+      4
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 312,
+    "max_training_target": 343,
+    "inner_train_max_target": 259,
+    "inner_validation_first_origin": 260
+  },
+  {
+    "period": "validation",
+    "origin": "2015-12-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      145,
+      160,
+      159,
+      152
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 312,
+    "max_training_target": 343,
+    "inner_train_max_target": 259,
+    "inner_validation_first_origin": 260,
+    "crossing_fraction_raw": 0.2
+  },
+  {
+    "period": "validation",
+    "origin": "2016-03-01",
+    "model": "rnn",
+    "epochs": [
+      50,
+      149,
+      46
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 315,
+    "max_training_target": 346,
+    "inner_train_max_target": 262,
+    "inner_validation_first_origin": 263
+  },
+  {
+    "period": "validation",
+    "origin": "2016-03-01",
+    "model": "lstm",
+    "epochs": [
+      18,
+      7,
+      37
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 315,
+    "max_training_target": 346,
+    "inner_train_max_target": 262,
+    "inner_validation_first_origin": 263
+  },
+  {
+    "period": "validation",
+    "origin": "2016-03-01",
+    "model": "cnn",
+    "epochs": [
+      5,
+      4,
+      4
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 315,
+    "max_training_target": 346,
+    "inner_train_max_target": 262,
+    "inner_validation_first_origin": 263
+  },
+  {
+    "period": "validation",
+    "origin": "2016-03-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      128,
+      160,
+      160,
+      128
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 315,
+    "max_training_target": 346,
+    "inner_train_max_target": 262,
+    "inner_validation_first_origin": 263,
+    "crossing_fraction_raw": 0.21904761904761905
+  },
+  {
+    "period": "validation",
+    "origin": "2016-06-01",
+    "model": "rnn",
+    "epochs": [
+      43,
+      160,
+      48
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 318,
+    "max_training_target": 349,
+    "inner_train_max_target": 264,
+    "inner_validation_first_origin": 265
+  },
+  {
+    "period": "validation",
+    "origin": "2016-06-01",
+    "model": "lstm",
+    "epochs": [
+      16,
+      3,
+      39
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 318,
+    "max_training_target": 349,
+    "inner_train_max_target": 264,
+    "inner_validation_first_origin": 265
+  },
+  {
+    "period": "validation",
+    "origin": "2016-06-01",
+    "model": "cnn",
+    "epochs": [
+      6,
+      4,
+      29
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 318,
+    "max_training_target": 349,
+    "inner_train_max_target": 264,
+    "inner_validation_first_origin": 265
+  },
+  {
+    "period": "validation",
+    "origin": "2016-06-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      124,
+      160,
+      131,
+      123
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 318,
+    "max_training_target": 349,
+    "inner_train_max_target": 264,
+    "inner_validation_first_origin": 265,
+    "crossing_fraction_raw": 0.3904761904761905
+  },
+  {
+    "period": "validation",
+    "origin": "2016-09-01",
+    "model": "rnn",
+    "epochs": [
+      80,
+      160,
+      49
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 321,
+    "max_training_target": 352,
+    "inner_train_max_target": 266,
+    "inner_validation_first_origin": 267
+  },
+  {
+    "period": "validation",
+    "origin": "2016-09-01",
+    "model": "lstm",
+    "epochs": [
+      18,
+      5,
+      41
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 321,
+    "max_training_target": 352,
+    "inner_train_max_target": 266,
+    "inner_validation_first_origin": 267
+  },
+  {
+    "period": "validation",
+    "origin": "2016-09-01",
+    "model": "cnn",
+    "epochs": [
+      13,
+      4,
+      40
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 321,
+    "max_training_target": 352,
+    "inner_train_max_target": 266,
+    "inner_validation_first_origin": 267
+  },
+  {
+    "period": "validation",
+    "origin": "2016-09-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      133,
+      126
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 321,
+    "max_training_target": 352,
+    "inner_train_max_target": 266,
+    "inner_validation_first_origin": 267,
+    "crossing_fraction_raw": 0.4
+  },
+  {
+    "period": "validation",
+    "origin": "2016-12-01",
+    "model": "rnn",
+    "epochs": [
+      73,
+      140,
+      49
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 324,
+    "max_training_target": 355,
+    "inner_train_max_target": 269,
+    "inner_validation_first_origin": 270
+  },
+  {
+    "period": "validation",
+    "origin": "2016-12-01",
+    "model": "lstm",
+    "epochs": [
+      35,
+      67,
+      55
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 324,
+    "max_training_target": 355,
+    "inner_train_max_target": 269,
+    "inner_validation_first_origin": 270
+  },
+  {
+    "period": "validation",
+    "origin": "2016-12-01",
+    "model": "cnn",
+    "epochs": [
+      14,
+      5,
+      39
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 324,
+    "max_training_target": 355,
+    "inner_train_max_target": 269,
+    "inner_validation_first_origin": 270
+  },
+  {
+    "period": "validation",
+    "origin": "2016-12-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 324,
+    "max_training_target": 355,
+    "inner_train_max_target": 269,
+    "inner_validation_first_origin": 270,
+    "crossing_fraction_raw": 0.29523809523809524
+  },
+  {
+    "period": "validation",
+    "origin": "2017-03-01",
+    "model": "rnn",
+    "epochs": [
+      72,
+      132,
+      50
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 327,
+    "max_training_target": 358,
+    "inner_train_max_target": 271,
+    "inner_validation_first_origin": 272
+  },
+  {
+    "period": "validation",
+    "origin": "2017-03-01",
+    "model": "lstm",
+    "epochs": [
+      54,
+      74,
+      64
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 327,
+    "max_training_target": 358,
+    "inner_train_max_target": 271,
+    "inner_validation_first_origin": 272
+  },
+  {
+    "period": "validation",
+    "origin": "2017-03-01",
+    "model": "cnn",
+    "epochs": [
+      14,
+      6,
+      157
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 327,
+    "max_training_target": 358,
+    "inner_train_max_target": 271,
+    "inner_validation_first_origin": 272
+  },
+  {
+    "period": "validation",
+    "origin": "2017-03-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 327,
+    "max_training_target": 358,
+    "inner_train_max_target": 271,
+    "inner_validation_first_origin": 272,
+    "crossing_fraction_raw": 0.22857142857142856
+  },
+  {
+    "period": "validation",
+    "origin": "2017-06-01",
+    "model": "rnn",
+    "epochs": [
+      125,
+      119,
+      56
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 330,
+    "max_training_target": 361,
+    "inner_train_max_target": 274,
+    "inner_validation_first_origin": 275
+  },
+  {
+    "period": "validation",
+    "origin": "2017-06-01",
+    "model": "lstm",
+    "epochs": [
+      114,
+      119,
+      114
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 330,
+    "max_training_target": 361,
+    "inner_train_max_target": 274,
+    "inner_validation_first_origin": 275
+  },
+  {
+    "period": "validation",
+    "origin": "2017-06-01",
+    "model": "cnn",
+    "epochs": [
+      13,
+      7,
+      97
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 330,
+    "max_training_target": 361,
+    "inner_train_max_target": 274,
+    "inner_validation_first_origin": 275
+  },
+  {
+    "period": "validation",
+    "origin": "2017-06-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 330,
+    "max_training_target": 361,
+    "inner_train_max_target": 274,
+    "inner_validation_first_origin": 275,
+    "crossing_fraction_raw": 0.22857142857142856
+  },
+  {
+    "period": "validation",
+    "origin": "2017-09-01",
+    "model": "rnn",
+    "epochs": [
+      88,
+      101,
+      139
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 333,
+    "max_training_target": 364,
+    "inner_train_max_target": 276,
+    "inner_validation_first_origin": 277
+  },
+  {
+    "period": "validation",
+    "origin": "2017-09-01",
+    "model": "lstm",
+    "epochs": [
+      86,
+      92,
+      86
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 333,
+    "max_training_target": 364,
+    "inner_train_max_target": 276,
+    "inner_validation_first_origin": 277
+  },
+  {
+    "period": "validation",
+    "origin": "2017-09-01",
+    "model": "cnn",
+    "epochs": [
+      13,
+      70,
+      82
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 333,
+    "max_training_target": 364,
+    "inner_train_max_target": 276,
+    "inner_validation_first_origin": 277
+  },
+  {
+    "period": "validation",
+    "origin": "2017-09-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 333,
+    "max_training_target": 364,
+    "inner_train_max_target": 276,
+    "inner_validation_first_origin": 277,
+    "crossing_fraction_raw": 0.1523809523809524
+  },
+  {
+    "period": "validation",
+    "origin": "2017-12-01",
+    "model": "rnn",
+    "epochs": [
+      91,
+      117,
+      130
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 336,
+    "max_training_target": 367,
+    "inner_train_max_target": 278,
+    "inner_validation_first_origin": 279
+  },
+  {
+    "period": "validation",
+    "origin": "2017-12-01",
+    "model": "lstm",
+    "epochs": [
+      80,
+      85,
+      88
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 336,
+    "max_training_target": 367,
+    "inner_train_max_target": 278,
+    "inner_validation_first_origin": 279
+  },
+  {
+    "period": "validation",
+    "origin": "2017-12-01",
+    "model": "cnn",
+    "epochs": [
+      13,
+      76,
+      83
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 336,
+    "max_training_target": 367,
+    "inner_train_max_target": 278,
+    "inner_validation_first_origin": 279
+  },
+  {
+    "period": "validation",
+    "origin": "2017-12-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 336,
+    "max_training_target": 367,
+    "inner_train_max_target": 278,
+    "inner_validation_first_origin": 279,
+    "crossing_fraction_raw": 0.23809523809523808
+  },
+  {
+    "period": "validation",
+    "origin": "2018-03-01",
+    "model": "rnn",
+    "epochs": [
+      88,
+      135,
+      141
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 339,
+    "max_training_target": 370,
+    "inner_train_max_target": 281,
+    "inner_validation_first_origin": 282
+  },
+  {
+    "period": "validation",
+    "origin": "2018-03-01",
+    "model": "lstm",
+    "epochs": [
+      87,
+      99,
+      101
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 339,
+    "max_training_target": 370,
+    "inner_train_max_target": 281,
+    "inner_validation_first_origin": 282
+  },
+  {
+    "period": "validation",
+    "origin": "2018-03-01",
+    "model": "cnn",
+    "epochs": [
+      12,
+      7,
+      79
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 339,
+    "max_training_target": 370,
+    "inner_train_max_target": 281,
+    "inner_validation_first_origin": 282
+  },
+  {
+    "period": "validation",
+    "origin": "2018-03-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 339,
+    "max_training_target": 370,
+    "inner_train_max_target": 281,
+    "inner_validation_first_origin": 282,
+    "crossing_fraction_raw": 0.34285714285714286
+  },
+  {
+    "period": "validation",
+    "origin": "2018-06-01",
+    "model": "rnn",
+    "epochs": [
+      88,
+      128,
+      139
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 342,
+    "max_training_target": 373,
+    "inner_train_max_target": 283,
+    "inner_validation_first_origin": 284
+  },
+  {
+    "period": "validation",
+    "origin": "2018-06-01",
+    "model": "lstm",
+    "epochs": [
+      87,
+      101,
+      110
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 342,
+    "max_training_target": 373,
+    "inner_train_max_target": 283,
+    "inner_validation_first_origin": 284
+  },
+  {
+    "period": "validation",
+    "origin": "2018-06-01",
+    "model": "cnn",
+    "epochs": [
+      13,
+      7,
+      79
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 342,
+    "max_training_target": 373,
+    "inner_train_max_target": 283,
+    "inner_validation_first_origin": 284
+  },
+  {
+    "period": "validation",
+    "origin": "2018-06-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 342,
+    "max_training_target": 373,
+    "inner_train_max_target": 283,
+    "inner_validation_first_origin": 284,
+    "crossing_fraction_raw": 0.3619047619047619
+  },
+  {
+    "period": "test",
+    "origin": "2020-04-01",
+    "model": "rnn",
+    "epochs": [
+      126,
+      158,
+      77
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 364,
+    "max_training_target": 395,
+    "inner_train_max_target": 301,
+    "inner_validation_first_origin": 302
+  },
+  {
+    "period": "test",
+    "origin": "2020-04-01",
+    "model": "lstm",
+    "epochs": [
+      117,
+      160,
+      140
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 364,
+    "max_training_target": 395,
+    "inner_train_max_target": 301,
+    "inner_validation_first_origin": 302
+  },
+  {
+    "period": "test",
+    "origin": "2020-04-01",
+    "model": "cnn",
+    "epochs": [
+      14,
+      116,
+      100
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 364,
+    "max_training_target": 395,
+    "inner_train_max_target": 301,
+    "inner_validation_first_origin": 302
+  },
+  {
+    "period": "test",
+    "origin": "2020-04-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      125,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 364,
+    "max_training_target": 395,
+    "inner_train_max_target": 301,
+    "inner_validation_first_origin": 302,
+    "crossing_fraction_raw": 0.17142857142857143
+  },
+  {
+    "period": "test",
+    "origin": "2020-07-01",
+    "model": "rnn",
+    "epochs": [
+      130,
+      149,
+      81
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 367,
+    "max_training_target": 398,
+    "inner_train_max_target": 303,
+    "inner_validation_first_origin": 304
+  },
+  {
+    "period": "test",
+    "origin": "2020-07-01",
+    "model": "lstm",
+    "epochs": [
+      158,
+      160,
+      131
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 367,
+    "max_training_target": 398,
+    "inner_train_max_target": 303,
+    "inner_validation_first_origin": 304
+  },
+  {
+    "period": "test",
+    "origin": "2020-07-01",
+    "model": "cnn",
+    "epochs": [
+      14,
+      120,
+      104
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 367,
+    "max_training_target": 398,
+    "inner_train_max_target": 303,
+    "inner_validation_first_origin": 304
+  },
+  {
+    "period": "test",
+    "origin": "2020-07-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      121,
+      159,
+      122,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 367,
+    "max_training_target": 398,
+    "inner_train_max_target": 303,
+    "inner_validation_first_origin": 304,
+    "crossing_fraction_raw": 0.26666666666666666
+  },
+  {
+    "period": "test",
+    "origin": "2020-10-01",
+    "model": "rnn",
+    "epochs": [
+      134,
+      156,
+      85
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 370,
+    "max_training_target": 401,
+    "inner_train_max_target": 306,
+    "inner_validation_first_origin": 307
+  },
+  {
+    "period": "test",
+    "origin": "2020-10-01",
+    "model": "lstm",
+    "epochs": [
+      160,
+      99,
+      126
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 370,
+    "max_training_target": 401,
+    "inner_train_max_target": 306,
+    "inner_validation_first_origin": 307
+  },
+  {
+    "period": "test",
+    "origin": "2020-10-01",
+    "model": "cnn",
+    "epochs": [
+      14,
+      121,
+      103
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 370,
+    "max_training_target": 401,
+    "inner_train_max_target": 306,
+    "inner_validation_first_origin": 307
+  },
+  {
+    "period": "test",
+    "origin": "2020-10-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      120,
+      145,
+      124,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 370,
+    "max_training_target": 401,
+    "inner_train_max_target": 306,
+    "inner_validation_first_origin": 307,
+    "crossing_fraction_raw": 0.4380952380952381
+  },
+  {
+    "period": "test",
+    "origin": "2021-01-01",
+    "model": "rnn",
+    "epochs": [
+      117,
+      127,
+      89
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 373,
+    "max_training_target": 404,
+    "inner_train_max_target": 308,
+    "inner_validation_first_origin": 309
+  },
+  {
+    "period": "test",
+    "origin": "2021-01-01",
+    "model": "lstm",
+    "epochs": [
+      109,
+      103,
+      131
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 373,
+    "max_training_target": 404,
+    "inner_train_max_target": 308,
+    "inner_validation_first_origin": 309
+  },
+  {
+    "period": "test",
+    "origin": "2021-01-01",
+    "model": "cnn",
+    "epochs": [
+      14,
+      26,
+      101
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 373,
+    "max_training_target": 404,
+    "inner_train_max_target": 308,
+    "inner_validation_first_origin": 309
+  },
+  {
+    "period": "test",
+    "origin": "2021-01-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      126,
+      160,
+      129,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 373,
+    "max_training_target": 404,
+    "inner_train_max_target": 308,
+    "inner_validation_first_origin": 309,
+    "crossing_fraction_raw": 0.580952380952381
+  },
+  {
+    "period": "test",
+    "origin": "2021-04-01",
+    "model": "rnn",
+    "epochs": [
+      114,
+      129,
+      93
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 376,
+    "max_training_target": 407,
+    "inner_train_max_target": 310,
+    "inner_validation_first_origin": 311
+  },
+  {
+    "period": "test",
+    "origin": "2021-04-01",
+    "model": "lstm",
+    "epochs": [
+      103,
+      107,
+      148
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 376,
+    "max_training_target": 407,
+    "inner_train_max_target": 310,
+    "inner_validation_first_origin": 311
+  },
+  {
+    "period": "test",
+    "origin": "2021-04-01",
+    "model": "cnn",
+    "epochs": [
+      14,
+      5,
+      100
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 376,
+    "max_training_target": 407,
+    "inner_train_max_target": 310,
+    "inner_validation_first_origin": 311
+  },
+  {
+    "period": "test",
+    "origin": "2021-04-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      147,
+      160,
+      135,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 376,
+    "max_training_target": 407,
+    "inner_train_max_target": 310,
+    "inner_validation_first_origin": 311,
+    "crossing_fraction_raw": 0.5523809523809524
+  },
+  {
+    "period": "test",
+    "origin": "2021-07-01",
+    "model": "rnn",
+    "epochs": [
+      111,
+      133,
+      96
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 379,
+    "max_training_target": 410,
+    "inner_train_max_target": 313,
+    "inner_validation_first_origin": 314
+  },
+  {
+    "period": "test",
+    "origin": "2021-07-01",
+    "model": "lstm",
+    "epochs": [
+      102,
+      144,
+      130
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 379,
+    "max_training_target": 410,
+    "inner_train_max_target": 313,
+    "inner_validation_first_origin": 314
+  },
+  {
+    "period": "test",
+    "origin": "2021-07-01",
+    "model": "cnn",
+    "epochs": [
+      14,
+      5,
+      94
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 379,
+    "max_training_target": 410,
+    "inner_train_max_target": 313,
+    "inner_validation_first_origin": 314
+  },
+  {
+    "period": "test",
+    "origin": "2021-07-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 379,
+    "max_training_target": 410,
+    "inner_train_max_target": 313,
+    "inner_validation_first_origin": 314,
+    "crossing_fraction_raw": 0.5047619047619047
+  },
+  {
+    "period": "test",
+    "origin": "2021-10-01",
+    "model": "rnn",
+    "epochs": [
+      110,
+      137,
+      104
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 382,
+    "max_training_target": 413,
+    "inner_train_max_target": 315,
+    "inner_validation_first_origin": 316
+  },
+  {
+    "period": "test",
+    "origin": "2021-10-01",
+    "model": "lstm",
+    "epochs": [
+      102,
+      111,
+      130
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 382,
+    "max_training_target": 413,
+    "inner_train_max_target": 315,
+    "inner_validation_first_origin": 316
+  },
+  {
+    "period": "test",
+    "origin": "2021-10-01",
+    "model": "cnn",
+    "epochs": [
+      14,
+      6,
+      89
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 382,
+    "max_training_target": 413,
+    "inner_train_max_target": 315,
+    "inner_validation_first_origin": 316
+  },
+  {
+    "period": "test",
+    "origin": "2021-10-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 382,
+    "max_training_target": 413,
+    "inner_train_max_target": 315,
+    "inner_validation_first_origin": 316,
+    "crossing_fraction_raw": 0.42857142857142855
+  },
+  {
+    "period": "test",
+    "origin": "2022-01-01",
+    "model": "rnn",
+    "epochs": [
+      107,
+      140,
+      110
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 385,
+    "max_training_target": 416,
+    "inner_train_max_target": 318,
+    "inner_validation_first_origin": 319
+  },
+  {
+    "period": "test",
+    "origin": "2022-01-01",
+    "model": "lstm",
+    "epochs": [
+      99,
+      114,
+      130
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 385,
+    "max_training_target": 416,
+    "inner_train_max_target": 318,
+    "inner_validation_first_origin": 319
+  },
+  {
+    "period": "test",
+    "origin": "2022-01-01",
+    "model": "cnn",
+    "epochs": [
+      14,
+      6,
+      91
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 385,
+    "max_training_target": 416,
+    "inner_train_max_target": 318,
+    "inner_validation_first_origin": 319
+  },
+  {
+    "period": "test",
+    "origin": "2022-01-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 385,
+    "max_training_target": 416,
+    "inner_train_max_target": 318,
+    "inner_validation_first_origin": 319,
+    "crossing_fraction_raw": 0.37142857142857144
+  },
+  {
+    "period": "test",
+    "origin": "2022-04-01",
+    "model": "rnn",
+    "epochs": [
+      103,
+      144,
+      128
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 388,
+    "max_training_target": 419,
+    "inner_train_max_target": 320,
+    "inner_validation_first_origin": 321
+  },
+  {
+    "period": "test",
+    "origin": "2022-04-01",
+    "model": "lstm",
+    "epochs": [
+      97,
+      109,
+      129
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 388,
+    "max_training_target": 419,
+    "inner_train_max_target": 320,
+    "inner_validation_first_origin": 321
+  },
+  {
+    "period": "test",
+    "origin": "2022-04-01",
+    "model": "cnn",
+    "epochs": [
+      15,
+      99,
+      88
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 388,
+    "max_training_target": 419,
+    "inner_train_max_target": 320,
+    "inner_validation_first_origin": 321
+  },
+  {
+    "period": "test",
+    "origin": "2022-04-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 388,
+    "max_training_target": 419,
+    "inner_train_max_target": 320,
+    "inner_validation_first_origin": 321,
+    "crossing_fraction_raw": 0.5142857142857142
+  },
+  {
+    "period": "test",
+    "origin": "2022-07-01",
+    "model": "rnn",
+    "epochs": [
+      103,
+      146,
+      118
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 391,
+    "max_training_target": 422,
+    "inner_train_max_target": 322,
+    "inner_validation_first_origin": 323
+  },
+  {
+    "period": "test",
+    "origin": "2022-07-01",
+    "model": "lstm",
+    "epochs": [
+      96,
+      105,
+      118
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 391,
+    "max_training_target": 422,
+    "inner_train_max_target": 322,
+    "inner_validation_first_origin": 323
+  },
+  {
+    "period": "test",
+    "origin": "2022-07-01",
+    "model": "cnn",
+    "epochs": [
+      16,
+      96,
+      86
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 391,
+    "max_training_target": 422,
+    "inner_train_max_target": 322,
+    "inner_validation_first_origin": 323
+  },
+  {
+    "period": "test",
+    "origin": "2022-07-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 391,
+    "max_training_target": 422,
+    "inner_train_max_target": 322,
+    "inner_validation_first_origin": 323,
+    "crossing_fraction_raw": 0.580952380952381
+  },
+  {
+    "period": "test",
+    "origin": "2022-10-01",
+    "model": "rnn",
+    "epochs": [
+      101,
+      149,
+      119
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 394,
+    "max_training_target": 425,
+    "inner_train_max_target": 325,
+    "inner_validation_first_origin": 326
+  },
+  {
+    "period": "test",
+    "origin": "2022-10-01",
+    "model": "lstm",
+    "epochs": [
+      93,
+      97,
+      109
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 394,
+    "max_training_target": 425,
+    "inner_train_max_target": 325,
+    "inner_validation_first_origin": 326
+  },
+  {
+    "period": "test",
+    "origin": "2022-10-01",
+    "model": "cnn",
+    "epochs": [
+      17,
+      86,
+      85
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 394,
+    "max_training_target": 425,
+    "inner_train_max_target": 325,
+    "inner_validation_first_origin": 326
+  },
+  {
+    "period": "test",
+    "origin": "2022-10-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 394,
+    "max_training_target": 425,
+    "inner_train_max_target": 325,
+    "inner_validation_first_origin": 326,
+    "crossing_fraction_raw": 0.34285714285714286
+  },
+  {
+    "period": "test",
+    "origin": "2023-01-01",
+    "model": "rnn",
+    "epochs": [
+      99,
+      117,
+      119
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 397,
+    "max_training_target": 428,
+    "inner_train_max_target": 327,
+    "inner_validation_first_origin": 328
+  },
+  {
+    "period": "test",
+    "origin": "2023-01-01",
+    "model": "lstm",
+    "epochs": [
+      89,
+      91,
+      102
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 397,
+    "max_training_target": 428,
+    "inner_train_max_target": 327,
+    "inner_validation_first_origin": 328
+  },
+  {
+    "period": "test",
+    "origin": "2023-01-01",
+    "model": "cnn",
+    "epochs": [
+      17,
+      81,
+      73
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 397,
+    "max_training_target": 428,
+    "inner_train_max_target": 327,
+    "inner_validation_first_origin": 328
+  },
+  {
+    "period": "test",
+    "origin": "2023-01-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 397,
+    "max_training_target": 428,
+    "inner_train_max_target": 327,
+    "inner_validation_first_origin": 328,
+    "crossing_fraction_raw": 0.10476190476190476
+  },
+  {
+    "period": "test",
+    "origin": "2023-04-01",
+    "model": "rnn",
+    "epochs": [
+      96,
+      120,
+      147
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 400,
+    "max_training_target": 431,
+    "inner_train_max_target": 330,
+    "inner_validation_first_origin": 331
+  },
+  {
+    "period": "test",
+    "origin": "2023-04-01",
+    "model": "lstm",
+    "epochs": [
+      72,
+      85,
+      88
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 400,
+    "max_training_target": 431,
+    "inner_train_max_target": 330,
+    "inner_validation_first_origin": 331
+  },
+  {
+    "period": "test",
+    "origin": "2023-04-01",
+    "model": "cnn",
+    "epochs": [
+      19,
+      72,
+      70
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 400,
+    "max_training_target": 431,
+    "inner_train_max_target": 330,
+    "inner_validation_first_origin": 331
+  },
+  {
+    "period": "test",
+    "origin": "2023-04-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 400,
+    "max_training_target": 431,
+    "inner_train_max_target": 330,
+    "inner_validation_first_origin": 331,
+    "crossing_fraction_raw": 0.06666666666666667
+  },
+  {
+    "period": "test",
+    "origin": "2023-07-01",
+    "model": "rnn",
+    "epochs": [
+      95,
+      129,
+      136
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 403,
+    "max_training_target": 434,
+    "inner_train_max_target": 332,
+    "inner_validation_first_origin": 333
+  },
+  {
+    "period": "test",
+    "origin": "2023-07-01",
+    "model": "lstm",
+    "epochs": [
+      71,
+      85,
+      87
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 403,
+    "max_training_target": 434,
+    "inner_train_max_target": 332,
+    "inner_validation_first_origin": 333
+  },
+  {
+    "period": "test",
+    "origin": "2023-07-01",
+    "model": "cnn",
+    "epochs": [
+      19,
+      73,
+      70
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 403,
+    "max_training_target": 434,
+    "inner_train_max_target": 332,
+    "inner_validation_first_origin": 333
+  },
+  {
+    "period": "test",
+    "origin": "2023-07-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 403,
+    "max_training_target": 434,
+    "inner_train_max_target": 332,
+    "inner_validation_first_origin": 333,
+    "crossing_fraction_raw": 0.06666666666666667
+  },
+  {
+    "period": "test",
+    "origin": "2023-10-01",
+    "model": "rnn",
+    "epochs": [
+      95,
+      139,
+      154
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 406,
+    "max_training_target": 437,
+    "inner_train_max_target": 334,
+    "inner_validation_first_origin": 335
+  },
+  {
+    "period": "test",
+    "origin": "2023-10-01",
+    "model": "lstm",
+    "epochs": [
+      72,
+      86,
+      87
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 406,
+    "max_training_target": 437,
+    "inner_train_max_target": 334,
+    "inner_validation_first_origin": 335
+  },
+  {
+    "period": "test",
+    "origin": "2023-10-01",
+    "model": "cnn",
+    "epochs": [
+      33,
+      76,
+      73
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 406,
+    "max_training_target": 437,
+    "inner_train_max_target": 334,
+    "inner_validation_first_origin": 335
+  },
+  {
+    "period": "test",
+    "origin": "2023-10-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 406,
+    "max_training_target": 437,
+    "inner_train_max_target": 334,
+    "inner_validation_first_origin": 335,
+    "crossing_fraction_raw": 0.1619047619047619
+  },
+  {
+    "period": "test",
+    "origin": "2024-01-01",
+    "model": "rnn",
+    "epochs": [
+      93,
+      145,
+      143
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 409,
+    "max_training_target": 440,
+    "inner_train_max_target": 337,
+    "inner_validation_first_origin": 338
+  },
+  {
+    "period": "test",
+    "origin": "2024-01-01",
+    "model": "lstm",
+    "epochs": [
+      73,
+      95,
+      87
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 409,
+    "max_training_target": 440,
+    "inner_train_max_target": 337,
+    "inner_validation_first_origin": 338
+  },
+  {
+    "period": "test",
+    "origin": "2024-01-01",
+    "model": "cnn",
+    "epochs": [
+      74,
+      82,
+      85
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 409,
+    "max_training_target": 440,
+    "inner_train_max_target": 337,
+    "inner_validation_first_origin": 338
+  },
+  {
+    "period": "test",
+    "origin": "2024-01-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 409,
+    "max_training_target": 440,
+    "inner_train_max_target": 337,
+    "inner_validation_first_origin": 338,
+    "crossing_fraction_raw": 0.1523809523809524
+  },
+  {
+    "period": "test",
+    "origin": "2024-04-01",
+    "model": "rnn",
+    "epochs": [
+      93,
+      147,
+      138
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 412,
+    "max_training_target": 443,
+    "inner_train_max_target": 339,
+    "inner_validation_first_origin": 340
+  },
+  {
+    "period": "test",
+    "origin": "2024-04-01",
+    "model": "lstm",
+    "epochs": [
+      74,
+      90,
+      89
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 412,
+    "max_training_target": 443,
+    "inner_train_max_target": 339,
+    "inner_validation_first_origin": 340
+  },
+  {
+    "period": "test",
+    "origin": "2024-04-01",
+    "model": "cnn",
+    "epochs": [
+      78,
+      89,
+      141
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 412,
+    "max_training_target": 443,
+    "inner_train_max_target": 339,
+    "inner_validation_first_origin": 340
+  },
+  {
+    "period": "test",
+    "origin": "2024-04-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 412,
+    "max_training_target": 443,
+    "inner_train_max_target": 339,
+    "inner_validation_first_origin": 340,
+    "crossing_fraction_raw": 0.2
+  },
+  {
+    "period": "final",
+    "origin": "2026-03-01",
+    "model": "rnn",
+    "epochs": [
+      90,
+      99,
+      103
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 435,
+    "max_training_target": 466,
+    "inner_train_max_target": 358,
+    "inner_validation_first_origin": 359
+  },
+  {
+    "period": "final",
+    "origin": "2026-03-01",
+    "model": "lstm",
+    "epochs": [
+      67,
+      67,
+      75
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 435,
+    "max_training_target": 466,
+    "inner_train_max_target": 358,
+    "inner_validation_first_origin": 359
+  },
+  {
+    "period": "final",
+    "origin": "2026-03-01",
+    "model": "cnn",
+    "epochs": [
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "training_pairs": 435,
+    "max_training_target": 466,
+    "inner_train_max_target": 358,
+    "inner_validation_first_origin": 359
+  },
+  {
+    "period": "final",
+    "origin": "2026-03-01",
+    "model": "qrnn",
+    "epochs": [
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "training_pairs": 435,
+    "max_training_target": 466,
+    "inner_train_max_target": 358,
+    "inner_validation_first_origin": 359,
+    "crossing_fraction_raw": 0.34285714285714286
+  }
+]

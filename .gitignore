@@ -1,0 +1,40 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+task*/data/raw/*
+!task*/data/raw/.gitkeep
+# Небольшой снимок Brent и метаданные фиксируются для воспроизводимости.
+!task1_brent/data/raw/brent_monthly_*.csv
+!task1_brent/data/raw/metadata.json
+task*/data/processed/*
+!task*/data/processed/.gitkeep
+task2_bot/rag_index/*
+!task2_bot/rag_index/.gitkeep
+
+# Runtime metrics and local tariffs, never part of the submitted source
+*.local.jsonl
+*.local.json
+task2_bot/eval/runs/
+
+# IDE
+.vscode/
+.idea/
+
+# Local agent / working instructions
+AGENTS.md
+SUBMISSION_NOTES.md
+docs/AGENT_TASKS.md
+
+# Local archives
+*.zip
+
+# Local RAG experiment artifacts
+task2_bot/outputs/dev_ablation/

@@ -1,0 +1,735 @@
+{
+  "k": 6,
+  "summary": {
+    "n": 17,
+    "page_hits": 5,
+    "all_sources_hit": 16,
+    "all_evidence_pages_hit": 5,
+    "mrr": 0.12254901960784315
+  },
+  "groups": {
+    "cross_language": {
+      "n": 1,
+      "page_hits": 0,
+      "all_sources_hit": 1,
+      "all_evidence_pages_hit": 0,
+      "mrr": 0.0
+    },
+    "ru_to_en": {
+      "n": 13,
+      "page_hits": 3,
+      "all_sources_hit": 12,
+      "all_evidence_pages_hit": 3,
+      "mrr": 0.057692307692307696
+    },
+    "ru_to_ru": {
+      "n": 3,
+      "page_hits": 2,
+      "all_sources_hit": 3,
+      "all_evidence_pages_hit": 2,
+      "mrr": 0.4444444444444444
+    }
+  },
+  "rows": [
+    {
+      "id": "s1",
+      "group": "ru_to_ru",
+      "translation_used": false,
+      "hit": false,
+      "rank": null,
+      "all_sources": true,
+      "all_pages": false,
+      "retrieved": [
+        {
+          "id": "sipr_2025_2030:p129:c1",
+          "source": "sipr_2025_2030",
+          "page": 129
+        },
+        {
+          "id": "sipr_2025_2030:p61:c0",
+          "source": "sipr_2025_2030",
+          "page": 61
+        },
+        {
+          "id": "sipr_2025_2030:p44:c0",
+          "source": "sipr_2025_2030",
+          "page": 44
+        },
+        {
+          "id": "sipr_2025_2030:p56:c1",
+          "source": "sipr_2025_2030",
+          "page": 56
+        },
+        {
+          "id": "sipr_2025_2030:p15:c0",
+          "source": "sipr_2025_2030",
+          "page": 15
+        },
+        {
+          "id": "sipr_2025_2030:p129:c0",
+          "source": "sipr_2025_2030",
+          "page": 129
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "group": "ru_to_ru",
+      "translation_used": false,
+      "hit": true,
+      "rank": 1,
+      "all_sources": true,
+      "all_pages": true,
+      "retrieved": [
+        {
+          "id": "sipr_2025_2030:p6:c0",
+          "source": "sipr_2025_2030",
+          "page": 6
+        },
+        {
+          "id": "sipr_2025_2030:p20:c1",
+          "source": "sipr_2025_2030",
+          "page": 20
+        },
+        {
+          "id": "sipr_2025_2030:p58:c0",
+          "source": "sipr_2025_2030",
+          "page": 58
+        },
+        {
+          "id": "sipr_2025_2030:p72:c1",
+          "source": "sipr_2025_2030",
+          "page": 72
+        },
+        {
+          "id": "sipr_2025_2030:p49:c0",
+          "source": "sipr_2025_2030",
+          "page": 49
+        },
+        {
+          "id": "sipr_2025_2030:p137:c0",
+          "source": "sipr_2025_2030",
+          "page": 137
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "group": "ru_to_ru",
+      "translation_used": false,
+      "hit": true,
+      "rank": 3,
+      "all_sources": true,
+      "all_pages": true,
+      "retrieved": [
+        {
+          "id": "sipr_2025_2030:p82:c1",
+          "source": "sipr_2025_2030",
+          "page": 82
+        },
+        {
+          "id": "sipr_2025_2030:p129:c1",
+          "source": "sipr_2025_2030",
+          "page": 129
+        },
+        {
+          "id": "sipr_2025_2030:p44:c0",
+          "source": "sipr_2025_2030",
+          "page": 44
+        },
+        {
+          "id": "sipr_2025_2030:p46:c1",
+          "source": "sipr_2025_2030",
+          "page": 46
+        },
+        {
+          "id": "sipr_2025_2030:p96:c0",
+          "source": "sipr_2025_2030",
+          "page": 96
+        },
+        {
+          "id": "sipr_2025_2030:p134:c0",
+          "source": "sipr_2025_2030",
+          "page": 134
+        }
+      ]
+    },
+    {
+      "id": "number_1",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": false,
+      "rank": null,
+      "all_sources": true,
+      "all_pages": false,
+      "retrieved": [
+        {
+          "id": "iea_electricity_2025:p170:c0",
+          "source": "iea_electricity_2025",
+          "page": 170
+        },
+        {
+          "id": "iea_electricity_2025:p21:c0",
+          "source": "iea_electricity_2025",
+          "page": 21
+        },
+        {
+          "id": "iea_electricity_2025:p129:c0",
+          "source": "iea_electricity_2025",
+          "page": 129
+        },
+        {
+          "id": "iea_electricity_2025:p134:c0",
+          "source": "iea_electricity_2025",
+          "page": 134
+        },
+        {
+          "id": "iea_electricity_2025:p42:c0",
+          "source": "iea_electricity_2025",
+          "page": 42
+        },
+        {
+          "id": "iea_electricity_2025:p129:c1",
+          "source": "iea_electricity_2025",
+          "page": 129
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": false,
+      "rank": null,
+      "all_sources": true,
+      "all_pages": false,
+      "retrieved": [
+        {
+          "id": "iea_electricity_2025:p142:c0",
+          "source": "iea_electricity_2025",
+          "page": 142
+        },
+        {
+          "id": "iea_electricity_2025:p134:c0",
+          "source": "iea_electricity_2025",
+          "page": 134
+        },
+        {
+          "id": "iea_electricity_2025:p170:c0",
+          "source": "iea_electricity_2025",
+          "page": 170
+        },
+        {
+          "id": "iea_electricity_2025:p13:c1",
+          "source": "iea_electricity_2025",
+          "page": 13
+        },
+        {
+          "id": "iea_electricity_2025:p139:c0",
+          "source": "iea_electricity_2025",
+          "page": 139
+        },
+        {
+          "id": "iea_electricity_2025:p153:c1",
+          "source": "iea_electricity_2025",
+          "page": 153
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": false,
+      "rank": null,
+      "all_sources": true,
+      "all_pages": false,
+      "retrieved": [
+        {
+          "id": "iea_electricity_2025:p142:c0",
+          "source": "iea_electricity_2025",
+          "page": 142
+        },
+        {
+          "id": "iea_electricity_2025:p129:c0",
+          "source": "iea_electricity_2025",
+          "page": 129
+        },
+        {
+          "id": "iea_electricity_2025:p170:c0",
+          "source": "iea_electricity_2025",
+          "page": 170
+        },
+        {
+          "id": "iea_electricity_2025:p134:c0",
+          "source": "iea_electricity_2025",
+          "page": 134
+        },
+        {
+          "id": "iea_electricity_2025:p3:c0",
+          "source": "iea_electricity_2025",
+          "page": 3
+        },
+        {
+          "id": "iea_electricity_2025:p36:c0",
+          "source": "iea_electricity_2025",
+          "page": 36
+        }
+      ]
+    },
+    {
+      "id": "g1",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": true,
+      "rank": 4,
+      "all_sources": true,
+      "all_pages": true,
+      "retrieved": [
+        {
+          "id": "iea_global_energy_review_2025:p4:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 4
+        },
+        {
+          "id": "iea_global_energy_review_2025:p3:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 3
+        },
+        {
+          "id": "iea_global_energy_review_2025:p8:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 8
+        },
+        {
+          "id": "iea_global_energy_review_2025:p5:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 5
+        },
+        {
+          "id": "iea_global_energy_review_2025:p37:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 37
+        },
+        {
+          "id": "iea_global_energy_review_2025:p32:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 32
+        }
+      ]
+    },
+    {
+      "id": "g2",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": false,
+      "rank": null,
+      "all_sources": true,
+      "all_pages": false,
+      "retrieved": [
+        {
+          "id": "iea_global_energy_review_2025:p4:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 4
+        },
+        {
+          "id": "iea_global_energy_review_2025:p3:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 3
+        },
+        {
+          "id": "iea_global_energy_review_2025:p8:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 8
+        },
+        {
+          "id": "iea_global_energy_review_2025:p5:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 5
+        },
+        {
+          "id": "iea_global_energy_review_2025:p37:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 37
+        },
+        {
+          "id": "iea_global_energy_review_2025:p32:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 32
+        }
+      ]
+    },
+    {
+      "id": "g3",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": true,
+      "rank": 4,
+      "all_sources": true,
+      "all_pages": true,
+      "retrieved": [
+        {
+          "id": "iea_global_energy_review_2025:p4:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 4
+        },
+        {
+          "id": "iea_global_energy_review_2025:p3:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 3
+        },
+        {
+          "id": "iea_global_energy_review_2025:p8:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 8
+        },
+        {
+          "id": "iea_global_energy_review_2025:p5:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 5
+        },
+        {
+          "id": "iea_global_energy_review_2025:p37:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 37
+        },
+        {
+          "id": "iea_global_energy_review_2025:p32:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 32
+        }
+      ]
+    },
+    {
+      "id": "x1",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": false,
+      "rank": null,
+      "all_sources": true,
+      "all_pages": false,
+      "retrieved": [
+        {
+          "id": "iea_electricity_2025:p67:c0",
+          "source": "iea_electricity_2025",
+          "page": 67
+        },
+        {
+          "id": "iea_global_energy_review_2025:p4:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 4
+        },
+        {
+          "id": "iea_global_energy_review_2025:p3:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 3
+        },
+        {
+          "id": "iea_global_energy_review_2025:p8:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 8
+        },
+        {
+          "id": "iea_electricity_2025:p51:c0",
+          "source": "iea_electricity_2025",
+          "page": 51
+        }
+      ]
+    },
+    {
+      "id": "x2",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": false,
+      "rank": null,
+      "all_sources": true,
+      "all_pages": false,
+      "retrieved": [
+        {
+          "id": "iea_electricity_2025:p51:c0",
+          "source": "iea_electricity_2025",
+          "page": 51
+        },
+        {
+          "id": "iea_global_energy_review_2025:p4:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 4
+        },
+        {
+          "id": "iea_global_energy_review_2025:p3:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 3
+        },
+        {
+          "id": "iea_global_energy_review_2025:p8:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 8
+        },
+        {
+          "id": "iea_electricity_2025:p67:c0",
+          "source": "iea_electricity_2025",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "id": "x3",
+      "group": "cross_language",
+      "translation_used": false,
+      "hit": false,
+      "rank": null,
+      "all_sources": true,
+      "all_pages": false,
+      "retrieved": [
+        {
+          "id": "iea_electricity_2025:p142:c0",
+          "source": "iea_electricity_2025",
+          "page": 142
+        },
+        {
+          "id": "sipr_2025_2030:p43:c3",
+          "source": "sipr_2025_2030",
+          "page": 43
+        },
+        {
+          "id": "sipr_2025_2030:p46:c1",
+          "source": "sipr_2025_2030",
+          "page": 46
+        },
+        {
+          "id": "sipr_2025_2030:p129:c1",
+          "source": "sipr_2025_2030",
+          "page": 129
+        },
+        {
+          "id": "iea_electricity_2025:p129:c0",
+          "source": "iea_electricity_2025",
+          "page": 129
+        },
+        {
+          "id": "iea_electricity_2025:p170:c0",
+          "source": "iea_electricity_2025",
+          "page": 170
+        }
+      ]
+    },
+    {
+      "id": "x4",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": false,
+      "rank": null,
+      "all_sources": false,
+      "all_pages": false,
+      "retrieved": [
+        {
+          "id": "sipr_2025_2030:p45:c0",
+          "source": "sipr_2025_2030",
+          "page": 45
+        },
+        {
+          "id": "sipr_2025_2030:p45:c1",
+          "source": "sipr_2025_2030",
+          "page": 45
+        },
+        {
+          "id": "sipr_2025_2030:p129:c0",
+          "source": "sipr_2025_2030",
+          "page": 129
+        }
+      ]
+    },
+    {
+      "id": "false_1",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": false,
+      "rank": null,
+      "all_sources": true,
+      "all_pages": false,
+      "retrieved": [
+        {
+          "id": "iea_electricity_2025:p142:c0",
+          "source": "iea_electricity_2025",
+          "page": 142
+        },
+        {
+          "id": "iea_electricity_2025:p134:c0",
+          "source": "iea_electricity_2025",
+          "page": 134
+        },
+        {
+          "id": "iea_electricity_2025:p170:c0",
+          "source": "iea_electricity_2025",
+          "page": 170
+        },
+        {
+          "id": "iea_electricity_2025:p13:c1",
+          "source": "iea_electricity_2025",
+          "page": 13
+        },
+        {
+          "id": "iea_electricity_2025:p139:c0",
+          "source": "iea_electricity_2025",
+          "page": 139
+        },
+        {
+          "id": "iea_electricity_2025:p153:c1",
+          "source": "iea_electricity_2025",
+          "page": 153
+        }
+      ]
+    },
+    {
+      "id": "f3",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": true,
+      "rank": 4,
+      "all_sources": true,
+      "all_pages": true,
+      "retrieved": [
+        {
+          "id": "iea_global_energy_review_2025:p4:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 4
+        },
+        {
+          "id": "iea_global_energy_review_2025:p3:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 3
+        },
+        {
+          "id": "iea_global_energy_review_2025:p8:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 8
+        },
+        {
+          "id": "iea_global_energy_review_2025:p5:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 5
+        },
+        {
+          "id": "iea_global_energy_review_2025:p37:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 37
+        },
+        {
+          "id": "iea_global_energy_review_2025:p32:c0",
+          "source": "iea_global_energy_review_2025",
+          "page": 32
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": false,
+      "rank": null,
+      "all_sources": true,
+      "all_pages": false,
+      "retrieved": [
+        {
+          "id": "iea_electricity_2025:p170:c0",
+          "source": "iea_electricity_2025",
+          "page": 170
+        },
+        {
+          "id": "iea_electricity_2025:p21:c0",
+          "source": "iea_electricity_2025",
+          "page": 21
+        },
+        {
+          "id": "iea_electricity_2025:p129:c0",
+          "source": "iea_electricity_2025",
+          "page": 129
+        },
+        {
+          "id": "iea_electricity_2025:p134:c0",
+          "source": "iea_electricity_2025",
+          "page": 134
+        },
+        {
+          "id": "iea_electricity_2025:p42:c0",
+          "source": "iea_electricity_2025",
+          "page": 42
+        },
+        {
+          "id": "iea_electricity_2025:p129:c1",
+          "source": "iea_electricity_2025",
+          "page": 129
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "group": "ru_to_en",
+      "translation_used": false,
+      "hit": false,
+      "rank": null,
+      "all_sources": true,
+      "all_pages": false,
+      "retrieved": [
+        {
+          "id": "iea_electricity_2025:p170:c0",
+          "source": "iea_electricity_2025",
+          "page": 170
+        },
+        {
+          "id": "iea_electricity_2025:p21:c0",
+          "source": "iea_electricity_2025",
+          "page": 21
+        },
+        {
+          "id": "iea_electricity_2025:p129:c0",
+          "source": "iea_electricity_2025",
+          "page": 129
+        },
+        {
+          "id": "iea_electricity_2025:p134:c0",
+          "source": "iea_electricity_2025",
+          "page": 134
+        },
+        {
+          "id": "iea_electricity_2025:p42:c0",
+          "source": "iea_electricity_2025",
+          "page": 42
+        },
+        {
+          "id": "iea_electricity_2025:p129:c1",
+          "source": "iea_electricity_2025",
+          "page": 129
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "id": "o1",
+      "reason": "not_retrieval_gold"
+    },
+    {
+      "id": "o3",
+      "reason": "not_retrieval_gold"
+    },
+    {
+      "id": "i1",
+      "reason": "not_retrieval_gold"
+    },
+    {
+      "id": "i2",
+      "reason": "not_retrieval_gold"
+    }
+  ],
+  "translation": "off",
+  "note": "Counts are numerator/denominator. Manual translations are not measurements of the live translator.",
+  "configuration": {
+    "split": "dev",
+    "mode": "bm25",
+    "scope": "on",
+    "lexical_weight": 0.25,
+    "model": "intfloat/multilingual-e5-small",
+    "chunks_sha256": "7ec4990659cfa8b004fcffbdf655ffad227255e3f1a546e22aeb44b09f7f317e"
+  }
+}

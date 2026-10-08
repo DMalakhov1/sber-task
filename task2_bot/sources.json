@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sipr_2025_2030",
+    "url": "https://www.so-ups.ru/fileadmin/files/company/future_plan/public_discussion/2025-30_final/sipr_ups_2025-30_fin.pdf",
+    "type": "pdf",
+    "expected_content": "Полный документ/отчёт, не только резюме",
+    "fallback": "Если автоматическая загрузка недоступна, скачать полный документ вручную в task2_bot/data/raw/ и записать URL, дату, имя файла и SHA-256.",
+    "resolved_document_url": null,
+    "local_file": null,
+    "license_status": "Проверить по конкретному документу",
+    "title": "СиПР 2025–2030: обосновывающие материалы, сводный отчёт по ЕЭС России",
+    "verified_sha256": "12588a7814afdaea5875c0375e78c47f3c74799d0ae54223353c0dad9e6c7591",
+    "verified_pages": 236,
+    "review_note": "Проверены титул, объём документа, оглавление/основные разделы и страницы в середине и конце PDF. Полный документ по ссылке задания; сложные таблицы требуют отдельной сверки."
+  },
+  {
+    "id": "iea_electricity_2025",
+    "url": "https://www.iea.org/reports/electricity-2025",
+    "type": "landing_page",
+    "expected_content": "Полный документ/отчёт, не только резюме",
+    "fallback": "Если автоматическая загрузка недоступна, скачать полный документ вручную в task2_bot/data/raw/ и записать URL, дату, имя файла и SHA-256.",
+    "resolved_document_url": "https://iea.blob.core.windows.net/assets/7c671ef6-2947-4e87-beea-af0e1288e1d7/Electricity2025.pdf",
+    "local_file": null,
+    "license_status": "CC BY 4.0 — указано на странице именно этого отчёта, проверено 06.10.2026",
+    "title": "IEA Electricity 2025",
+    "verified_sha256": "08fffb29edf8468c0a795a9b4eab2298a8059dce4307e97ade5b5ab4e9179f9e",
+    "verified_pages": 200,
+    "review_note": "Проверены титул, объём документа, оглавление/основные разделы и страницы в середине и конце PDF. Полный документ по ссылке задания; сложные таблицы требуют отдельной сверки."
+  },
+  {
+    "id": "iea_global_energy_review_2025",
+    "url": "https://www.iea.org/reports/global-energy-review-2025",
+    "type": "landing_page",
+    "expected_content": "Полный документ/отчёт, не только резюме",
+    "fallback": "Если автоматическая загрузка недоступна, скачать полный документ вручную в task2_bot/data/raw/ и записать URL, дату, имя файла и SHA-256.",
+    "resolved_document_url": "https://iea.blob.core.windows.net/assets/5b169aa1-bc88-4c96-b828-aaa50406ba80/GlobalEnergyReview2025.pdf",
+    "local_file": null,
+    "license_status": "CC BY 4.0 — указано на странице именно этого отчёта, проверено 06.10.2026",
+    "title": "IEA Global Energy Review 2025",
+    "verified_sha256": "b6396909c6a0ca95bd32bdb5863dbf6bb317cad3ce799294ec2a2883650992f2",
+    "verified_pages": 43,
+    "review_note": "Проверены титул, объём документа, оглавление/основные разделы и страницы в середине и конце PDF. Полный документ по ссылке задания; сложные таблицы требуют отдельной сверки."
+  }
+]
