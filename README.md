@@ -1,87 +1,91 @@
-# SBER: три задания аналитика
+# SBER Analyst Test
 
-Открой `Task_SBERаналитик.ipynb`: там условия, таблицы, графики и выводы.
-**Run All только читает готовые результаты** — без обучения, Telegram и платных API.
-Проверки текущей версии: [docs/CURRENT_VALIDATION.md](docs/CURRENT_VALIDATION.md).
+Репозиторий содержит три независимых задания аналитического теста:
 
-| Задача | Что реализовано | Главный результат | Как запустить |
-|---|---|---|---|
-| 1. Brent | 31 спецификация, train/validation/test, RNN/LSTM/CNN/QRNN | `task1_brent/outputs/extended_full/RESULTS.md` | [Инструкция](task1_brent/EXTENDED_METHOD.md) |
-| 2. Telegram RAG | Поиск по трём PDF, ссылки, проверки, дружелюбный тон | Работающий код; новая версия проверена офлайн | [Инструкция](task2_bot/README.md) |
-| 3. Excel | API → кэш → снимок → проверки → 3 листа | `task3_excel/outputs/electricity_2026-09.xlsx` | [Инструкция](task3_excel/README.md) |
+1. прогнозирование месячной цены Brent;
+2. Telegram RAG-бот по материалам электроэнергетики;
+3. выгрузка данных СБР в Excel.
 
-## Установка в VS Code на Mac
+## Структура
 
-1. Распакуй архив в отдельную папку, сохрани предыдущую версию.
-2. Открой в VS Code папку `sber-analyst-test`, где находятся три папки задач.
-3. Открой терминал и активируй своё окружение:
+```text
+sber-analyst-test/
+├── task1_brent/   # прогноз Brent
+├── task2_bot/     # Telegram RAG-бот
+├── task3_excel/   # Excel-выгрузка
+├── tests/
+└── docs/
+```
+
+## Установка
+
+Рекомендуется Python 3.12.
 
 ```bash
+conda create -n sber python=3.12 pip
 conda activate sber
 python -m pip install -r requirements-all.txt
 ```
 
-Если conda нет, можно вместо первой команды создать окружение:
+Дополнительные зависимости:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements-all.txt
-```
-
-В VS Code выбери Python этого окружения и его Jupyter-ядро. Проверено на
-Linux/Python 3.12; отдельного запуска на Mac не было.
-
-Для **обучения** нейросетей дополнительно:
-
-```bash
+# Neural-блок Task 1
 python -m pip install -r task1_brent/requirements-neural.txt
-python -m task1_brent.extended_experiment --mode fast --neural --output task1_brent/outputs/my_fast
-```
 
-Полный запуск — `--mode full` и новая папка `--output`. Готовый полный расчёт
-уже приложен; для просмотра PyTorch не нужен. Без `--neural` работают базовые модели.
-
-Для семантического поиска и reranker бота дополнительно:
-
-```bash
+# Semantic retrieval Task 2
 python -m pip install -r task2_bot/requirements-semantic.txt
 ```
 
-Токен Telegram и ключ провайдера в архив не включены. Создай локальный `.env`
-по `.env.example`, как описано в README бота; не заменяй свой рабочий `.env`
-чужими настройками. API-ключ вводится в личном Telegram-чате.
-Ранее опубликованный токен Telegram нужно отозвать в BotFather.
+## Task 1 — Brent forecasting
 
-## Проверка и открытие Excel
+Прогноз месячной цены Brent на горизонтах 1, 3, 6 и 12 месяцев. В проекте есть эконометрические, ML, вероятностные и компактные neural-модели.
 
-```bash
-python -m pytest -q
-open task3_excel/outputs/electricity_2026-09.xlsx
+Главный результат:
+
+```text
+task1_brent/Task1_Brent_Research.ipynb
 ```
 
-Без установленного PyTorch четыре нейросетевых теста пропускаются, остальные
-проверки доступны. Офлайн-пересборка Excel и новая загрузка сайта — разные команды
-в `task3_excel/README.md`. Код 3 означает созданный файл с неполными ценами.
+```bash
+jupyter notebook task1_brent/Task1_Brent_Research.ipynb
+```
 
-## Короткие выводы
+Подробнее: [task1_brent/README.md](task1_brent/README.md).
 
-**Brent.** Срез май 1987 — март 2026 сохранён. Validation выбрала HGB для h=1,
-MR(180,6) для h=2–21. На h=1 выбор проиграл naive в test — это показано в отчёте.
-К декабрю 2027 получено около 75.08 USD/барр. от мартовского среза. QRNN не
-победила; покрытие её интервала на h=21 — 76.5% при номинале 90%.
-История test уже изучалась, поэтому это ретроспективная проверка.
+## Task 2 — Telegram RAG Bot
 
-**Бот.** Приветствие, подсказки и ошибки стали понятнее. Техническая ошибка API
-отличается от нехватки подтверждения. Проверки источников, ключей и переключателей
-сохранены. Живое качество DeepSeek/reranker ещё требует проверки с твоими ключами.
+Бот отвечает на вопросы по трём энергетическим PDF, использует hybrid retrieval и OpenAI-compatible API DeepSeek.
 
-**Excel.** 5040/5040 фактических интервалов по семи ОЭС. Генерация и потребление
-полные; 720 цен Востока отсутствуют в источнике. Строгий общий ИБР пуст, частичные
-средние подписаны отдельно и сопровождаются охватом. Потребление как вес — допущение.
+```bash
+python -m task2_bot.rag.download fetch
+python -m task2_bot.bot.main --check
+python -m task2_bot.bot.main
+```
 
-В комплекте один фактический Excel, сохранённые ответы и снимок для воспроизведения.
-Старые результаты Brent сохранены отдельно от `extended_full`. PDF и индекс бота
-оставлены для локального запуска; условия распространения документов проверяй
-перед публичной публикацией. Git, окружения, `.env`, временные Excel и вложенные ZIP
-в сдаваемый комплект не входят.
+Подробнее: [task2_bot/README.md](task2_bot/README.md).
+
+## Task 3 — Electricity Excel Export
+
+Формирование Excel по 7 ОЭС: генерация, потребление и среднее ИБР.
+
+```bash
+python -m task3_excel.source_http \
+  --month 2026-09 \
+  --weight consumption_mwh \
+  --allow-partial \
+  --snapshot task3_excel/data/processed/check_2026-09.json \
+  --output task3_excel/outputs/electricity_2026-09.xlsx
+```
+
+Подробнее: [task3_excel/README.md](task3_excel/README.md).
+
+## Быстрые проверки
+
+```bash
+python -m pytest -q tests/test_stage2.py tests/test_stage3.py tests/test_stage4.py tests/test_extended_brent.py
+python -m pytest -q tests/test_rag.py tests/test_bot_friendly.py tests/test_bot_reranking.py
+python -m pytest -q tests/test_excel.py tests/test_calendar.py tests/test_source_http.py
+```
+
+Секреты (`.env`, API keys, Telegram token) в Git не добавляются.
