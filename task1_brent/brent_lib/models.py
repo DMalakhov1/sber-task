@@ -10,16 +10,21 @@
   макропоказателей; здесь используются только признаки, доступные в момент
   выпуска прогноза.
 """
+
 import numpy as np
+import pandas as pd
 from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.linear_model import Ridge
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
+from statsmodels.tsa.ar_model import AutoReg
+from statsmodels.tsa.arima.model import ARIMA
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
 
 class NaiveModel:
     """Прогноз = последнее наблюдение. Baseline для сравнения MAE."""
+
     name = "naive"
 
     def fit(self, train):
@@ -32,6 +37,7 @@ class NaiveModel:
 
 class DriftModel:
     """Последнее наблюдение + наклон среднего прироста по train."""
+
     name = "drift"
 
     def fit(self, train):
@@ -44,9 +50,53 @@ class DriftModel:
         return self.last_ + steps * self.drift_
 
 
+class HistoricalMeanModel:
+    name = "historical_mean"
+
+    def fit(self, train):
+        self.mean_ = float(train.mean())
+        return self
+
+    def predict(self, horizon):
+        return np.full(horizon, self.mean_)
+
+
+class SESModel:
+    name = "ses"
+
+    def fit(self, train):
+        y = pd.Series(train).astype(float)
+        self.model_ = ExponentialSmoothing(
+            y, trend="add", seasonal=None, initialization_method="estimated"
+        ).fit(optimized=True, use_brute=True)
+        return self
+
+    def predict(self, horizon):
+        return np.asarray(self.model_.forecast(horizon), dtype=float)
+
+
+class HoltModel:
+    name = "holt"
+
+    def fit(self, train):
+        y = pd.Series(train).astype(float)
+        self.model_ = ExponentialSmoothing(
+            y,
+            trend="add",
+            damped_trend=True,
+            seasonal=None,
+            initialization_method="estimated",
+        ).fit(optimized=True, use_brute=True)
+        return self
+
+    def predict(self, horizon):
+        return np.asarray(self.model_.forecast(horizon), dtype=float)
+
+
 class ETSLogModel:
     """ETS(A,Ad,N) на логарифме ряда. Сезонность не задаётся: у месячных
     цен на нефть устойчивая годовая сезонность не установлена."""
+
     name = "ets_log"
 
     def fit(self, train):
@@ -60,6 +110,112 @@ class ETSLogModel:
         return np.exp(self.fit_.forecast(horizon))
 
 
+class AR1Model:
+    name = "ar_1"
+
+    def fit(self, train):
+        y = pd.Series(train).astype(float)
+        self.model_ = AutoReg(y, lags=1, old_names=False).fit()
+        return self
+
+    def predict(self, horizon):
+        return np.asarray(self.model_.forecast(steps=horizon), dtype=float)
+
+
+class ARSelectModel:
+    name = "selected_ar"
+
+    def fit(self, train):
+        y = pd.Series(train).astype(float)
+        best = None
+        for p in range(1, 5):
+            try:
+                model = AutoReg(y, lags=p, old_names=False).fit()
+                score = model.bic
+                if best is None or score < best[0]:
+                    best = (score, p, model)
+            except Exception:
+                pass
+        if best is None:
+            raise ValueError("AR selection failed")
+        self.order_ = best[1]
+        self.model_ = best[2]
+        return self
+
+    def predict(self, horizon):
+        return np.asarray(self.model_.forecast(steps=horizon), dtype=float)
+
+
+class ARMASelectModel:
+    name = "selected_arma"
+
+    def fit(self, train):
+        y = pd.Series(train).astype(float)
+        stationary = y.diff().dropna()
+        if len(stationary) < 12:
+            stationary = y.pct_change().dropna()
+        best = None
+        for p in range(0, 3):
+            for q in range(0, 3):
+                if p == 0 and q == 0:
+                    continue
+                try:
+                    fit = ARIMA(
+                        stationary,
+                        order=(p, 0, q),
+                        enforce_stationarity=False,
+                        enforce_invertibility=False,
+                    ).fit()
+                    score = fit.bic
+                    if best is None or score < best[0]:
+                        best = (score, (p, q), fit)
+                except Exception:
+                    continue
+        if best is None:
+            raise ValueError("ARMA selection failed")
+        self.order_ = best[1]
+        self.model_ = best[2]
+        self.level_last_ = float(y.iloc[-1])
+        return self
+
+    def predict(self, horizon):
+        delta = np.asarray(self.model_.forecast(steps=horizon), dtype=float)
+        return self.level_last_ + np.cumsum(delta)
+
+
+class ARIMASelectModel:
+    name = "selected_arima"
+
+    def fit(self, train):
+        y = pd.Series(train).astype(float)
+        best = None
+        for d in (0, 1):
+            for p in range(0, 3):
+                for q in range(0, 3):
+                    if p == 0 and q == 0 and d == 0:
+                        continue
+                    try:
+                        fit = ARIMA(
+                            y,
+                            order=(p, d, q),
+                            enforce_stationarity=False,
+                            enforce_invertibility=False,
+                        ).fit()
+                        score = fit.bic
+                        if best is None or score < best[0]:
+                            best = (score, (p, d, q), fit)
+                    except Exception:
+                        continue
+        if best is None:
+            raise ValueError("ARIMA selection failed")
+        self.order_ = best[1]
+        self.model_ = best[2]
+        return self
+
+    def predict(self, horizon):
+        return np.asarray(self.model_.forecast(steps=horizon), dtype=float)
+
+
 class _DirectBase:
     """Прямая модель: log(y(t+h)) = f(X(t)), X(t) — только данные, доступные в t.
 
@@ -68,6 +224,7 @@ class _DirectBase:
     Все преобразования (scaler) живут внутри sklearn Pipeline и обучаются
     только на train-парах.
     """
+
     regressor = None
 
     def fit(self, X, y):
@@ -89,6 +246,7 @@ class DirectRidgeModel(_DirectBase):
 class DirectHGBModel(_DirectBase):
     """Нелинейный градиентный бустинг; scaler ему безразличен, но единый
     конвейер оставлен ради одинакового интерфейса."""
+
     name = "hgb_direct"
 
     def _make_regressor(self):
@@ -103,6 +261,7 @@ class MeanReversionModel:
     Параметры фиксированы до пересчёта; это сценарная модель, не установленный
     закон цены нефти. Средний уровень оценивается только на train.
     """
+
     name = "mean_reversion"
 
     def fit(self, train):
@@ -115,8 +274,20 @@ class MeanReversionModel:
         return np.exp(self.mean_ + (self.last_ - self.mean_) * decay)
 
 
-ENSEMBLE_MEMBERS = ('naive', 'ets_log', 'ridge_direct', 'mean_reversion')
-STATISTICAL_MODELS = [NaiveModel, DriftModel, ETSLogModel, MeanReversionModel]
+ENSEMBLE_MEMBERS = ("naive", "ets_log", "ridge_direct", "mean_reversion")
+STATISTICAL_MODELS = [
+    NaiveModel,
+    DriftModel,
+    HistoricalMeanModel,
+    SESModel,
+    HoltModel,
+    AR1Model,
+    ARSelectModel,
+    ARMASelectModel,
+    ARIMASelectModel,
+    ETSLogModel,
+    MeanReversionModel,
+]
 DIRECT_MODELS = [DirectRidgeModel, DirectHGBModel]
 
 

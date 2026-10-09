@@ -1,9 +1,13 @@
 # Статус — 08.10.2026
 
 - **Brent:** полный расширенный эксперимент завершён, 31 спецификация. Срез до марта 2026 не изменён. Явные train/validation/test, purge по датам целей, train-only scaling, bounded early stopping, 3 seed для RNN/LSTM/CNN и 5 для QRNN. Выбор по validation зафиксирован до test. Готовые результаты: `task1_brent/outputs/extended_full/`. Сопоставление с ВКР: `task1_brent/EXTENDED_METHOD.md`.
+- **Brent / Stage 2:** добавлен компактный pipeline для внешних макро-факторов и ML-оценки: явный inventory, месячная агрегация raw-источников, сдвиг на release lag, direct forecasting по common origin, без data leakage; проверено на узком регрессионном наборе `tests/test_stage2.py`.
+- **Brent / Stage 3:** добавлен компактный probabilistic block для Brent: квантильные метрики pinball/CRPS/coverage/Winkler, QR/X + QAR + quantile boosting, единый набор квантилей `[0.05, 0.10, 0.25, 0.50, 0.75, 0.90, 0.95]`, проверка монотонности и common-origin evidence; регрессионный набор `tests/test_stage3.py` — `7 passed`.
 - **Бот:** дружелюбные сообщения и системный промпт, API-сбой отделён от отсутствия подтверждения. Ссылки, защитные проверки, reranker и диагностические переключатели сохранены. Дополнительных вызовов для изменения тона нет. Новая версия проверена с моками; живое качество не заявляется.
 - **Excel:** 31 ответ повторно даёт 5040 идентичных строк. Объёмы полные, 720 null-цен Востока. Формулы, частичный охват, отдельные статусы, строгий итог пуст. Один фактический Excel. Контрольные суммы и формулы проверены, три листа просмотрены. Инструкции показывают входы и выходы.
-- **Проверки:** 154 теста и 5 subtests на среде с PyTorch. Подробности — `CURRENT_VALIDATION.md` и `EXCEL_UPGRADE_VALIDATION.md`.
+- **Проверки:** 154 теста и 5 subtests на среде с PyTorch. Для Stage 2 добавлен локальный регрессионный набор: `pytest tests/test_stage2.py -q` → 6 passed. Подробности — `CURRENT_VALIDATION.md` и `EXCEL_UPGRADE_VALIDATION.md`.
+- **Brent / notebook:** итоговый исследовательский ноутбук `task1_brent/Task1_Brent_Research.ipynb` пересобран по фактической структуре Stage 1–4: читаются реальные артефакты и вызываются исходные реализации `stage2`/`stage3`, а не устаревшие сводки. Зафиксировано ограничение Stage 4: final evaluation идёт на фиксированной сетке origin с шагом 12 месяцев, поэтому это не dense monthly backtest, а bounded retrospective sample.
+- **Проверка notebook:** `jupyter nbconvert --to notebook --execute task1_brent/Task1_Brent_Research.ipynb --inplace` → pass. Дополнительно прогнан регрессионный набор `pytest tests/test_stage2.py tests/test_stage3.py tests/test_stage4.py tests/test_extended_brent.py -q` → 31 passed.
 - **Внешние проверки:** живой DeepSeek/Telegram/reranker, Mac M1, визуальная сверка сайта; официальная причина null-цен и методика веса остаются неизвестными.
 
 В этой доработке платные API не вызывались. Предыдущие отчёты в docs описывают

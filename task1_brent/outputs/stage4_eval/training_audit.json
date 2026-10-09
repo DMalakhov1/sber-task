@@ -1,0 +1,1333 @@
+[
+  {
+    "period": "validation",
+    "origin": "2014-06-01",
+    "model": "mlp",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 293,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.602630853652954,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 294,
+    "max_training_target": 325,
+    "inner_train_max_target": 245,
+    "inner_validation_first_origin": 246
+  },
+  {
+    "period": "validation",
+    "origin": "2014-06-01",
+    "model": "rnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 277,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.651362419128418,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 294,
+    "max_training_target": 325,
+    "inner_train_max_target": 245,
+    "inner_validation_first_origin": 246
+  },
+  {
+    "period": "validation",
+    "origin": "2014-06-01",
+    "model": "lstm",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 541,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.6455183029174805,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 294,
+    "max_training_target": 325,
+    "inner_train_max_target": 245,
+    "inner_validation_first_origin": 246
+  },
+  {
+    "period": "validation",
+    "origin": "2014-06-01",
+    "model": "gru",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 453,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.637380599975586,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 294,
+    "max_training_target": 325,
+    "inner_train_max_target": 245,
+    "inner_validation_first_origin": 246
+  },
+  {
+    "period": "validation",
+    "origin": "2014-06-01",
+    "model": "cnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 1733,
+    "epochs": [
+      5
+    ],
+    "selected_epoch": 5,
+    "validation_loss": 1.63460111618042,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 294,
+    "max_training_target": 325,
+    "inner_train_max_target": 245,
+    "inner_validation_first_origin": 246
+  },
+  {
+    "period": "validation",
+    "origin": "2014-06-01",
+    "model": "qrnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 3695,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.4470047652721405,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 294,
+    "max_training_target": 325,
+    "inner_train_max_target": 245,
+    "inner_validation_first_origin": 246,
+    "crossing_fraction_raw": 1.0
+  },
+  {
+    "period": "validation",
+    "origin": "2015-06-01",
+    "model": "mlp",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 293,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.9442113637924194,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 306,
+    "max_training_target": 337,
+    "inner_train_max_target": 254,
+    "inner_validation_first_origin": 255
+  },
+  {
+    "period": "validation",
+    "origin": "2015-06-01",
+    "model": "rnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 277,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.962867021560669,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 306,
+    "max_training_target": 337,
+    "inner_train_max_target": 254,
+    "inner_validation_first_origin": 255
+  },
+  {
+    "period": "validation",
+    "origin": "2015-06-01",
+    "model": "lstm",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 541,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.9798962473869324,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 306,
+    "max_training_target": 337,
+    "inner_train_max_target": 254,
+    "inner_validation_first_origin": 255
+  },
+  {
+    "period": "validation",
+    "origin": "2015-06-01",
+    "model": "gru",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 453,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.9452941417694092,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 306,
+    "max_training_target": 337,
+    "inner_train_max_target": 254,
+    "inner_validation_first_origin": 255
+  },
+  {
+    "period": "validation",
+    "origin": "2015-06-01",
+    "model": "cnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 1733,
+    "epochs": [
+      4
+    ],
+    "selected_epoch": 4,
+    "validation_loss": 0.9642455577850342,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 306,
+    "max_training_target": 337,
+    "inner_train_max_target": 254,
+    "inner_validation_first_origin": 255
+  },
+  {
+    "period": "validation",
+    "origin": "2015-06-01",
+    "model": "qrnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 3695,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.34142112731933594,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 306,
+    "max_training_target": 337,
+    "inner_train_max_target": 254,
+    "inner_validation_first_origin": 255,
+    "crossing_fraction_raw": 1.0
+  },
+  {
+    "period": "validation",
+    "origin": "2016-06-01",
+    "model": "mlp",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 293,
+    "epochs": [
+      16
+    ],
+    "selected_epoch": 16,
+    "validation_loss": 1.3982487916946411,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 318,
+    "max_training_target": 349,
+    "inner_train_max_target": 264,
+    "inner_validation_first_origin": 265
+  },
+  {
+    "period": "validation",
+    "origin": "2016-06-01",
+    "model": "rnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 277,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.2355810403823853,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 318,
+    "max_training_target": 349,
+    "inner_train_max_target": 264,
+    "inner_validation_first_origin": 265
+  },
+  {
+    "period": "validation",
+    "origin": "2016-06-01",
+    "model": "lstm",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 541,
+    "epochs": [
+      16
+    ],
+    "selected_epoch": 16,
+    "validation_loss": 1.33027982711792,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 318,
+    "max_training_target": 349,
+    "inner_train_max_target": 264,
+    "inner_validation_first_origin": 265
+  },
+  {
+    "period": "validation",
+    "origin": "2016-06-01",
+    "model": "gru",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 453,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.2975269556045532,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 318,
+    "max_training_target": 349,
+    "inner_train_max_target": 264,
+    "inner_validation_first_origin": 265
+  },
+  {
+    "period": "validation",
+    "origin": "2016-06-01",
+    "model": "cnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 1733,
+    "epochs": [
+      6
+    ],
+    "selected_epoch": 6,
+    "validation_loss": 1.391811728477478,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 318,
+    "max_training_target": 349,
+    "inner_train_max_target": 264,
+    "inner_validation_first_origin": 265
+  },
+  {
+    "period": "validation",
+    "origin": "2016-06-01",
+    "model": "qrnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 3695,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.3879247009754181,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 318,
+    "max_training_target": 349,
+    "inner_train_max_target": 264,
+    "inner_validation_first_origin": 265,
+    "crossing_fraction_raw": 1.0
+  },
+  {
+    "period": "validation",
+    "origin": "2017-06-01",
+    "model": "mlp",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 293,
+    "epochs": [
+      15
+    ],
+    "selected_epoch": 15,
+    "validation_loss": 1.2588728666305542,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 330,
+    "max_training_target": 361,
+    "inner_train_max_target": 274,
+    "inner_validation_first_origin": 275
+  },
+  {
+    "period": "validation",
+    "origin": "2017-06-01",
+    "model": "rnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 277,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.2099701166152954,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 330,
+    "max_training_target": 361,
+    "inner_train_max_target": 274,
+    "inner_validation_first_origin": 275
+  },
+  {
+    "period": "validation",
+    "origin": "2017-06-01",
+    "model": "lstm",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 541,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.3258863687515259,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 330,
+    "max_training_target": 361,
+    "inner_train_max_target": 274,
+    "inner_validation_first_origin": 275
+  },
+  {
+    "period": "validation",
+    "origin": "2017-06-01",
+    "model": "gru",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 453,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.2586897611618042,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 330,
+    "max_training_target": 361,
+    "inner_train_max_target": 274,
+    "inner_validation_first_origin": 275
+  },
+  {
+    "period": "validation",
+    "origin": "2017-06-01",
+    "model": "cnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 1733,
+    "epochs": [
+      13
+    ],
+    "selected_epoch": 13,
+    "validation_loss": 1.1510820388793945,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 330,
+    "max_training_target": 361,
+    "inner_train_max_target": 274,
+    "inner_validation_first_origin": 275
+  },
+  {
+    "period": "validation",
+    "origin": "2017-06-01",
+    "model": "qrnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 3695,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.41480427980422974,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 330,
+    "max_training_target": 361,
+    "inner_train_max_target": 274,
+    "inner_validation_first_origin": 275,
+    "crossing_fraction_raw": 1.0
+  },
+  {
+    "period": "validation",
+    "origin": "2018-06-01",
+    "model": "mlp",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 293,
+    "epochs": [
+      17
+    ],
+    "selected_epoch": 17,
+    "validation_loss": 1.1615427732467651,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 342,
+    "max_training_target": 373,
+    "inner_train_max_target": 283,
+    "inner_validation_first_origin": 284
+  },
+  {
+    "period": "validation",
+    "origin": "2018-06-01",
+    "model": "rnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 277,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.0770660638809204,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 342,
+    "max_training_target": 373,
+    "inner_train_max_target": 283,
+    "inner_validation_first_origin": 284
+  },
+  {
+    "period": "validation",
+    "origin": "2018-06-01",
+    "model": "lstm",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 541,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.1825320720672607,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 342,
+    "max_training_target": 373,
+    "inner_train_max_target": 283,
+    "inner_validation_first_origin": 284
+  },
+  {
+    "period": "validation",
+    "origin": "2018-06-01",
+    "model": "gru",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 453,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.1412256956100464,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 342,
+    "max_training_target": 373,
+    "inner_train_max_target": 283,
+    "inner_validation_first_origin": 284
+  },
+  {
+    "period": "validation",
+    "origin": "2018-06-01",
+    "model": "cnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 1733,
+    "epochs": [
+      13
+    ],
+    "selected_epoch": 13,
+    "validation_loss": 1.0304210186004639,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 342,
+    "max_training_target": 373,
+    "inner_train_max_target": 283,
+    "inner_validation_first_origin": 284
+  },
+  {
+    "period": "validation",
+    "origin": "2018-06-01",
+    "model": "qrnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 3695,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.38974112272262573,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 342,
+    "max_training_target": 373,
+    "inner_train_max_target": 283,
+    "inner_validation_first_origin": 284,
+    "crossing_fraction_raw": 1.0
+  },
+  {
+    "period": "test",
+    "origin": "2020-04-01",
+    "model": "mlp",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 293,
+    "epochs": [
+      19
+    ],
+    "selected_epoch": 19,
+    "validation_loss": 1.3515663146972656,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 364,
+    "max_training_target": 395,
+    "inner_train_max_target": 301,
+    "inner_validation_first_origin": 302
+  },
+  {
+    "period": "test",
+    "origin": "2020-04-01",
+    "model": "rnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 277,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.2485389709472656,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 364,
+    "max_training_target": 395,
+    "inner_train_max_target": 301,
+    "inner_validation_first_origin": 302
+  },
+  {
+    "period": "test",
+    "origin": "2020-04-01",
+    "model": "lstm",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 541,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.3341103792190552,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 364,
+    "max_training_target": 395,
+    "inner_train_max_target": 301,
+    "inner_validation_first_origin": 302
+  },
+  {
+    "period": "test",
+    "origin": "2020-04-01",
+    "model": "gru",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 453,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.3092830181121826,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 364,
+    "max_training_target": 395,
+    "inner_train_max_target": 301,
+    "inner_validation_first_origin": 302
+  },
+  {
+    "period": "test",
+    "origin": "2020-04-01",
+    "model": "cnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 1733,
+    "epochs": [
+      14
+    ],
+    "selected_epoch": 14,
+    "validation_loss": 1.3352030515670776,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 364,
+    "max_training_target": 395,
+    "inner_train_max_target": 301,
+    "inner_validation_first_origin": 302
+  },
+  {
+    "period": "test",
+    "origin": "2020-04-01",
+    "model": "qrnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 3695,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.4173998534679413,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 364,
+    "max_training_target": 395,
+    "inner_train_max_target": 301,
+    "inner_validation_first_origin": 302,
+    "crossing_fraction_raw": 1.0
+  },
+  {
+    "period": "test",
+    "origin": "2021-04-01",
+    "model": "mlp",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 293,
+    "epochs": [
+      19
+    ],
+    "selected_epoch": 19,
+    "validation_loss": 1.6908433437347412,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 376,
+    "max_training_target": 407,
+    "inner_train_max_target": 310,
+    "inner_validation_first_origin": 311
+  },
+  {
+    "period": "test",
+    "origin": "2021-04-01",
+    "model": "rnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 277,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.559406042098999,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 376,
+    "max_training_target": 407,
+    "inner_train_max_target": 310,
+    "inner_validation_first_origin": 311
+  },
+  {
+    "period": "test",
+    "origin": "2021-04-01",
+    "model": "lstm",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 541,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.6618331670761108,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 376,
+    "max_training_target": 407,
+    "inner_train_max_target": 310,
+    "inner_validation_first_origin": 311
+  },
+  {
+    "period": "test",
+    "origin": "2021-04-01",
+    "model": "gru",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 453,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.6386741399765015,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 376,
+    "max_training_target": 407,
+    "inner_train_max_target": 310,
+    "inner_validation_first_origin": 311
+  },
+  {
+    "period": "test",
+    "origin": "2021-04-01",
+    "model": "cnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 1733,
+    "epochs": [
+      14
+    ],
+    "selected_epoch": 14,
+    "validation_loss": 1.6603615283966064,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 376,
+    "max_training_target": 407,
+    "inner_train_max_target": 310,
+    "inner_validation_first_origin": 311
+  },
+  {
+    "period": "test",
+    "origin": "2021-04-01",
+    "model": "qrnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 3695,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.47560837864875793,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 376,
+    "max_training_target": 407,
+    "inner_train_max_target": 310,
+    "inner_validation_first_origin": 311,
+    "crossing_fraction_raw": 1.0
+  },
+  {
+    "period": "test",
+    "origin": "2022-04-01",
+    "model": "mlp",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 293,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 2.127310276031494,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 388,
+    "max_training_target": 419,
+    "inner_train_max_target": 320,
+    "inner_validation_first_origin": 321
+  },
+  {
+    "period": "test",
+    "origin": "2022-04-01",
+    "model": "rnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 277,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 2.0612587928771973,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 388,
+    "max_training_target": 419,
+    "inner_train_max_target": 320,
+    "inner_validation_first_origin": 321
+  },
+  {
+    "period": "test",
+    "origin": "2022-04-01",
+    "model": "lstm",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 541,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 2.1195123195648193,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 388,
+    "max_training_target": 419,
+    "inner_train_max_target": 320,
+    "inner_validation_first_origin": 321
+  },
+  {
+    "period": "test",
+    "origin": "2022-04-01",
+    "model": "gru",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 453,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 2.1012020111083984,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 388,
+    "max_training_target": 419,
+    "inner_train_max_target": 320,
+    "inner_validation_first_origin": 321
+  },
+  {
+    "period": "test",
+    "origin": "2022-04-01",
+    "model": "cnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 1733,
+    "epochs": [
+      15
+    ],
+    "selected_epoch": 15,
+    "validation_loss": 2.071225881576538,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 388,
+    "max_training_target": 419,
+    "inner_train_max_target": 320,
+    "inner_validation_first_origin": 321
+  },
+  {
+    "period": "test",
+    "origin": "2022-04-01",
+    "model": "qrnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 3695,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.5314983129501343,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 388,
+    "max_training_target": 419,
+    "inner_train_max_target": 320,
+    "inner_validation_first_origin": 321,
+    "crossing_fraction_raw": 1.0
+  },
+  {
+    "period": "test",
+    "origin": "2023-04-01",
+    "model": "mlp",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 293,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.7519891262054443,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 400,
+    "max_training_target": 431,
+    "inner_train_max_target": 330,
+    "inner_validation_first_origin": 331
+  },
+  {
+    "period": "test",
+    "origin": "2023-04-01",
+    "model": "rnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 277,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.7499752044677734,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 400,
+    "max_training_target": 431,
+    "inner_train_max_target": 330,
+    "inner_validation_first_origin": 331
+  },
+  {
+    "period": "test",
+    "origin": "2023-04-01",
+    "model": "lstm",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 541,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.764081358909607,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 400,
+    "max_training_target": 431,
+    "inner_train_max_target": 330,
+    "inner_validation_first_origin": 331
+  },
+  {
+    "period": "test",
+    "origin": "2023-04-01",
+    "model": "gru",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 453,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.7493821382522583,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 400,
+    "max_training_target": 431,
+    "inner_train_max_target": 330,
+    "inner_validation_first_origin": 331
+  },
+  {
+    "period": "test",
+    "origin": "2023-04-01",
+    "model": "cnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 1733,
+    "epochs": [
+      19
+    ],
+    "selected_epoch": 19,
+    "validation_loss": 1.7338873147964478,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 400,
+    "max_training_target": 431,
+    "inner_train_max_target": 330,
+    "inner_validation_first_origin": 331
+  },
+  {
+    "period": "test",
+    "origin": "2023-04-01",
+    "model": "qrnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 3695,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.4790964424610138,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 400,
+    "max_training_target": 431,
+    "inner_train_max_target": 330,
+    "inner_validation_first_origin": 331,
+    "crossing_fraction_raw": 1.0
+  },
+  {
+    "period": "test",
+    "origin": "2024-04-01",
+    "model": "mlp",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 293,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.657671570777893,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 412,
+    "max_training_target": 443,
+    "inner_train_max_target": 339,
+    "inner_validation_first_origin": 340
+  },
+  {
+    "period": "test",
+    "origin": "2024-04-01",
+    "model": "rnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 277,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.669606328010559,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 412,
+    "max_training_target": 443,
+    "inner_train_max_target": 339,
+    "inner_validation_first_origin": 340
+  },
+  {
+    "period": "test",
+    "origin": "2024-04-01",
+    "model": "lstm",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 541,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.6878141164779663,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 412,
+    "max_training_target": 443,
+    "inner_train_max_target": 339,
+    "inner_validation_first_origin": 340
+  },
+  {
+    "period": "test",
+    "origin": "2024-04-01",
+    "model": "gru",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 453,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.673080563545227,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 412,
+    "max_training_target": 443,
+    "inner_train_max_target": 339,
+    "inner_validation_first_origin": 340
+  },
+  {
+    "period": "test",
+    "origin": "2024-04-01",
+    "model": "cnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 1733,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.6380304098129272,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 412,
+    "max_training_target": 443,
+    "inner_train_max_target": 339,
+    "inner_validation_first_origin": 340
+  },
+  {
+    "period": "test",
+    "origin": "2024-04-01",
+    "model": "qrnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 3695,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.46768876910209656,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 412,
+    "max_training_target": 443,
+    "inner_train_max_target": 339,
+    "inner_validation_first_origin": 340,
+    "crossing_fraction_raw": 1.0
+  },
+  {
+    "period": "final",
+    "origin": "2026-03-01",
+    "model": "mlp",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 293,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.3227299451828003,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 435,
+    "max_training_target": 466,
+    "inner_train_max_target": 358,
+    "inner_validation_first_origin": 359
+  },
+  {
+    "period": "final",
+    "origin": "2026-03-01",
+    "model": "rnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 277,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.3396366834640503,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 435,
+    "max_training_target": 466,
+    "inner_train_max_target": 358,
+    "inner_validation_first_origin": 359
+  },
+  {
+    "period": "final",
+    "origin": "2026-03-01",
+    "model": "lstm",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 541,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.372705101966858,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 435,
+    "max_training_target": 466,
+    "inner_train_max_target": 358,
+    "inner_validation_first_origin": 359
+  },
+  {
+    "period": "final",
+    "origin": "2026-03-01",
+    "model": "gru",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 453,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.3534932136535645,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 435,
+    "max_training_target": 466,
+    "inner_train_max_target": 358,
+    "inner_validation_first_origin": 359
+  },
+  {
+    "period": "final",
+    "origin": "2026-03-01",
+    "model": "cnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 1733,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 1.3122594356536865,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 435,
+    "max_training_target": 466,
+    "inner_train_max_target": 358,
+    "inner_validation_first_origin": 359
+  },
+  {
+    "period": "final",
+    "origin": "2026-03-01",
+    "model": "qrnn",
+    "hidden_size": 8,
+    "layers": 1,
+    "parameter_count": 3695,
+    "epochs": [
+      20
+    ],
+    "selected_epoch": 20,
+    "validation_loss": 0.4111386239528656,
+    "seeds": [
+      11
+    ],
+    "training_pairs": 435,
+    "max_training_target": 466,
+    "inner_train_max_target": 358,
+    "inner_validation_first_origin": 359,
+    "crossing_fraction_raw": 1.0
+  }
+]
